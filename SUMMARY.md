@@ -1,0 +1,1 @@
+Toto je příručka pro holky o programování v Pythonu.
