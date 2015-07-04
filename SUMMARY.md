@@ -16,5 +16,12 @@ if __name__ == "__main__":
 V této kuchařce se dočteš jak efektivně ovládat počítač, tak aby vykonával jakékoliv tebou zadané povely. V jazyce, který se omezuje jen na několik základních anglických slovíček:
 
 ```
+and       del       from      not       while
+as        elif      global    or        with
+assert    else      if        pass      yield
+break     except    import    print
+class     exec      in        raise
+continue  finally   is        return 
+def       for       lambda    try
 ```
 z nichž některé jsem sám v životě ještě ani jednou nepotřeboval použít.
