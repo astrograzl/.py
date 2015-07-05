@@ -1,8 +1,10 @@
-# Svéráz studia astrofyziky
+# Salome
 
-> Toto je příručka pro holky o programování v Pythonu.
+> Dámská příručka o programování v Pythonu.
 
-Ahoj, mé jméno je *Zdeněk Janák* a některé mě možná znáte jako "astrofyzika". Toto je můj skromný pokus o vysvětlení, dle mého názoru, základních informací nutných k porozumění modernímu pojetí **astro-informatičky**.
+Astronomie je od nepaměti vnímána v očích veřejnosti jako magická věda. 
+Aby si tento mystický nádech zachovala i v dnešní technologické době, 
+je třeba se stále učit nová kouzla.
 
 ```python
 #!/usr/bin/env python
@@ -13,7 +15,9 @@ if __name__ == "__main__":
     print(__doc__)
 ```
 
-V této kuchařce se dočteš jak efektivně ovládat počítač, tak aby vykonával jakékoliv tebou zadané povely. V jazyce, který se omezuje jen na několik základních anglických slovíček:
+V této příručce se dozvíš, jak efektivně ovládnout počítač. Tak aby 
+poslušně a bez odmlouvání vykonal každé tvoje přání. V jazyce, 
+který se omezuje jen na několik základních anglických slovíček:
 
 ```python
 and       del       from      not       while
@@ -24,6 +28,14 @@ class     exec      in        raise
 continue  finally   is        return 
 def       for       lambda    try
 ```
-z nichž některé jsem sám v životě ještě ani jednou nepotřeboval použít.
+
+To vše a ještě mnohem více z pohodlí svého gauče, pomocí interaktivní 
+webové stránky -- [IPython notebook](https://ipython.org/notebook.html).
+Vše co k tomu budeš potřebovat je jen vlastní notebook.
+Veškerý potřebný software, včetně moderního operačního systému
+»[Ubuntu](http://www.ubuntu.com)« můžeš získat zcela zdarma.
+
+Jest-li tě zajímá jak na to, tak čti dál[...](INSTALL.md)
+
 
 		*Z
