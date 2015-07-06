@@ -1,38 +1,54 @@
 # Salome
 
-> # Dámská příručka o programování v Pythonu.
-> *napsal*
-> ## Zdeněk Janák <janak@astronomie.cz>
-> @python
+> **Dámská příručka o programování v Pythonu**
+> *zasadil, zaléval i sklidil*
+> [Zdeněk Janák](janak.astronomie.cz)
+> «janak@astronomie.cz»
 
-* Stahuj z GitHubu <https://github.com/astrograzl/salome>
+Astronomie je od nepaměti vnímána v očích veřejnosti jako magická věda. 
+Aby si tento mystický nádech zachovala i v dnešní technologické době, 
+je třeba se stále učit nová kouzla.
 
-	* `$ git clone https://github.com/astrograzl/Salome.git`
-	* `$ cd Salome/`
-	* `$ ipython notebook`
+```python
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""Můj první skript ;-)"""
 
-_nebo_
+if __name__ == "__main__":
+    print(__doc__)
+```
 
-* Jdi rovnou do složky `notebooks`
+V této příručce se dozvíš, jak efektivně ovládnout počítač. Tak aby 
+poslušně a bez odmlouvání vykonal každé tvoje přání. V jazyce, 
+který se omezuje jen na několik základních anglických slovíček:
 
-_a_
+```python
+and       del       from      not       while
+as        elif      global    or        with
+assert    else      if        pass      yield
+break     except    import    print
+class     exec      in        raise
+continue  finally   is        return 
+def       for       lambda    try
+```
 
-* Klikni na náhodný soubor
+To vše a ještě mnohem více z pohodlí svého gauče, pomocí interaktivní 
+webové stránky &mdash; [IPython notebook](https://ipython.org/notebook.html).
+Vše co k tomu budeš potřebovat je jen vlastní notebook.
+Veškerý potřebný software, včetně moderního operačního systému
+[Ubuntu](http://www.ubuntu.com) můžeš získat zcela zdarma.
 
-## Obsah
+Jest-li tě zajímá jak na to, tak čti dál[...](INSTALL.md)
 
-* [Shrnutí](SUMMARY.md)
-* [Instalace](INSTALL.md)
-* [IPython](notebooks/)
-* [Terminál](XTERM.md)
-* [Linux](LINUX.md)
+
+		*Z
 
 ### Copyleft
 
 <small>
-<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">
-	Svéráz studia astrofyziky
-</span>,
+<em xmlns:dct="http://purl.org/dc/terms/" property="dct:title">
+	Salome
+</em>,
 	jehož autorem je 
 <a xmlns:cc="http://creativecommons.org/ns#" href="http://janak.astronomie.cz/" property="cc:attributionName" rel="cc:attributionURL">
 	Zdeněk Janák
