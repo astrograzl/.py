@@ -1,13 +1,13 @@
 # Salome
 
-> **Dámská příručka o programování v Pythonu**
+> **Příručka moderní astrofyzičky**
 > *zasadil, zaléval i sklidil*
-> [Zdeněk Janák](janak.astronomie.cz)
+> [Zdeněk Janák](http://janak.astronomie.cz/)
 > «janak@astronomie.cz»
 
-Astronomie je od nepaměti vnímána v očích veřejnosti jako magická věda. 
-Aby si tento mystický nádech zachovala i v dnešní technologické době, 
-je třeba se stále učit nová kouzla.
+Astrofyzika je od nepaměti vnímána v očích veřejnosti jako magická 
+věda. Aby si tento mystický obraz zachovala i v dnešní technologické 
+době, je třeba se stále učit novým kouzlům.
 
 ```python
 #!/usr/bin/env python
@@ -32,16 +32,13 @@ continue  finally   is        return
 def       for       lambda    try
 ```
 
-To vše a ještě mnohem více z pohodlí svého gauče, pomocí interaktivní 
-webové stránky &mdash; [IPython notebook](https://ipython.org/notebook.html).
-Vše co k tomu budeš potřebovat je jen vlastní notebook.
-Veškerý potřebný software, včetně moderního operačního systému
-[Ubuntu](http://www.ubuntu.com) můžeš získat zcela zdarma.
+To vše a ještě mnohem více z pohodlí gauče. Pomocí interaktivní 
+webové stránky. Vše co k tomu budeš potřebovat je pouze vlastní 
+notebook. Veškerý potřebný software, včetně moderního operačního 
+systému GNU/Linux získáš zcela zdarma.
 
 Jest-li tě zajímá jak na to, tak čti dál[...](INSTALL.md)
 
-
-		*Z
 
 ### Copyleft
 
@@ -49,7 +46,7 @@ Jest-li tě zajímá jak na to, tak čti dál[...](INSTALL.md)
 <em xmlns:dct="http://purl.org/dc/terms/" property="dct:title">
 	Salome
 </em>,
-	jehož autorem je 
+	jejímž autorem je 
 <a xmlns:cc="http://creativecommons.org/ns#" href="http://janak.astronomie.cz/" property="cc:attributionName" rel="cc:attributionURL">
 	Zdeněk Janák
 </a>,
