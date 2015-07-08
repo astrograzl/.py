@@ -4,13 +4,13 @@ Ačkoliv je tato příručka dostupná on-line, na adrese
 <http://astrograzl.gitbooks.io/salome/>, je výhodné si stáhnout i její 
 zdrojové kódy z repositáře <https://github.com/astrograzl/salome/>. 
 Tím, kromě vlastní kopie, získáš i možnost zkoumat jak byla tvořena. 
-Můžeš mi posílat návrhy na vylepšení, aby více odpovídala tvým 
-představám. Ale hlavně se tím i něco nového naučíš.
+Můžeš mi posílat návrhy na vylepšení a opravy chyb. Ale hlavně se tím i 
+něco nového naučíš.
 
 
 ## Stažení
 
-Depozitář se zdrojovým kódem získáš pomocí nástroje Git zadáním 
+Repozitář se zdrojovým kódem získáš pomocí nástroje Git zadáním 
 následujícího příkazu do okna Terminálu.
 
 	$ git clone https://github.com/astrograzl/Salome.git
@@ -29,11 +29,11 @@ se bát nemusíš.
 
 ![Fedora](screenshots/fedora.png)
 
-Vidím, že jsi si vybrala [Fedoru](https://getfedora.org). 
-Za to tě mohu jedině pochválit, neboť modrá ti sluší. V jiné distribuci 
-bude příkaz pro instalaci programů rozdílný i názvy balíčků se mohou 
-lišit. Proto zde uvádím i tabulku srovnávající Fodoru, Ubuntu (a jeho 
-odvozeniny jako je Mint) a Arch Linux, který sám používám.
+Vidím, že jsi si vybrala [Fedoru](https://getfedora.org). Za to tě mohu 
+jedině pochválit, neboť modrá ti sluší. V jiné distribuci bude příkaz 
+pro instalaci programů rozdílný i názvy balíčků se mohou lišit. Proto 
+zde uvádím tabulku srovnávající Fodoru, Ubuntu a Arch Linux, který 
+používám já.
 
 | ? | Fedora | Ubuntu | Arch |
 |---|--------|--------|------| 
@@ -47,8 +47,8 @@ odvozeniny jako je Mint) a Arch Linux, který sám používám.
 
 Distribuovaný systém správy verzí [Git](https://git-scm.org) slouží k 
 ukládání a sdílení zdrojového kódu, včetně historie jeho změn. S Gitem 
-už nikdy znovu nepřijdeš o svou bakalářku nebo diplomku pár dní před 
-jejím odevzdáním.
+nikdy nepřijdeš o svou bakalářku nebo diplomku pár dní před jejím 
+odevzdáním.
 
 Takže si otevři okno Terminálu a napiš do něj tento příkaz:
 
@@ -70,12 +70,12 @@ Did you mean this?
 ```
 
 Vidíš? Git je tak milý, že i když mu zadáš neplatný příkaz, tak se 
-pokusí odhadnout, co jsi tím mohla myslet. V tuto chvíli by jsi mohla 
+pokusí úhádnout, co jsi tím mohla myslet. V tuto chvíli by jsi měla 
 poslechnout jeho rady a zkusit zadat do Terminálu
 
 	$ git --help
 
-tak získáš alespoň základní nápovědu, jak jej používat a dozvíš se, co 
+tak získáš alespoň základní nápovědu, jak Git používat a dozvíš se, co 
 skutečně dělá první příkaz, který jsem na tebe zkoušel v úvodu.
 
 
@@ -98,11 +98,11 @@ nainstaluješ včetně všech jeho závislostí jediným příkazem
 
 Notebooky připojené k této příručce se nacházejí v adresáři notebooks 
 uvnitř adresáře Salome, který vznikl, když sis příručku klonovala z 
-gitu. Račte tedy vejít madam...
+GitHubu. Takže, račte vstoupit madam...
 
 	$ cd Salome/notebooks/
 
-Spouštění IPython Notebooku se pak provádí zadáním příkazu do Terminálu
+Spouštění IPython Notebooku z Terminálu se provádí zadáním příkazu
 
 	$ ipython3 notebook
 

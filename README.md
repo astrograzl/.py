@@ -19,7 +19,7 @@ if __name__ == "__main__":
 ```
 
 V této příručce se dozvíš, jak efektivně ovládnout počítač. Tak aby 
-poslušně a bez odmlouvání vykonal každé tvoje přání. V jazyce, 
+poslušně a bez odmlouvání vykonal každé tvoje přání. Jazykem, 
 který se omezuje jen na několik základních anglických slovíček:
 
 ```python
@@ -34,13 +34,12 @@ def       for       lambda    try
 
 To vše a ještě mnohem více z pohodlí gauče. Pomocí interaktivní webové 
 stránky. Vše co k tomu budeš potřebovat je pouze osobní počítač. 
-Veškerý potřebný software, včetně moderního operačního systému 
-GNU/Linux získáš zcela zdarma.
+Veškerý software, včetně moderního operačního systému GNU/Linux získáš 
+zcela zdarma.
 
-Jest-li tě zajímá jak na to, tak čti dál[...](INSTALL.md)
+Pokud tě zajímá jak na to, tak čti dál[...](INSTALL.md)
 
-
-### Copyleft
+---
 
 <em xmlns:dct="http://purl.org/dc/terms/" property="dct:title">
 Salome</em>, jejímž autorem je 
@@ -49,6 +48,6 @@ Zdeněk Janák</a>, podléhá licenci
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
 Creative Commons Uveďte původ-Zachovejte licenci 4.0 Mezinárodní</a>.
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
-<img alt="Licence Creative Commons" style="border-width:0;float:right;" 
+<img alt="Licence Creative Commons" style="border-width:0" 
 src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
 </a>
