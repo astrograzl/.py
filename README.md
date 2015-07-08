@@ -32,29 +32,23 @@ continue  finally   is        return
 def       for       lambda    try
 ```
 
-To vše a ještě mnohem více z pohodlí gauče. Pomocí interaktivní 
-webové stránky. Vše co k tomu budeš potřebovat je pouze vlastní 
-notebook. Veškerý potřebný software, včetně moderního operačního 
-systému GNU/Linux získáš zcela zdarma.
+To vše a ještě mnohem více z pohodlí gauče. Pomocí interaktivní webové 
+stránky. Vše co k tomu budeš potřebovat je pouze osobní počítač. 
+Veškerý potřebný software, včetně moderního operačního systému 
+GNU/Linux získáš zcela zdarma.
 
 Jest-li tě zajímá jak na to, tak čti dál[...](INSTALL.md)
 
 
 ### Copyleft
 
-<small>
 <em xmlns:dct="http://purl.org/dc/terms/" property="dct:title">
-	Salome
-</em>,
-	jejímž autorem je 
+Salome</em>, jejímž autorem je 
 <a xmlns:cc="http://creativecommons.org/ns#" href="http://janak.astronomie.cz/" property="cc:attributionName" rel="cc:attributionURL">
-	Zdeněk Janák
-</a>,
-	podléhá licenci
+Zdeněk Janák</a>, podléhá licenci
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
-	Creative Commons Uveďte původ-Zachovejte licenci 4.0 Mezinárodní
-</a>.
+Creative Commons Uveďte původ-Zachovejte licenci 4.0 Mezinárodní</a>.
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
-	<img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
+<img alt="Licence Creative Commons" style="border-width:0;float:right;" 
+src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
 </a>
-</small>

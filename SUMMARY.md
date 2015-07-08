@@ -5,4 +5,6 @@
 * [Notebook](NOTEBOOK.md)
 * [Terminál](XTERM.md)
 * [Linux](LINUX.md)
+* [Git](GIT.md)
 * [Slovníček](GLOSSARY.md)
+* [O autorovi](AUTHOR.md)
