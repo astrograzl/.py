@@ -69,13 +69,51 @@ Terminálu a interagující s uživatelem má svůj vlastní prompt.
 
 ## Historie
 
-Terminál si pamatuje historii příkazů, které do něj zadáváš. To má 
-ohromnou výhodu, protože příště je nemusíš znovu celé vypisovat. Pomocí 
+Terminál si pamatuje historii příkazů, které do něj zadáváš. To je jeho 
+ohromná výhoda, protože příště je nemusíš znovu celé vypisovat. Pomocí 
 šipek nahoru a dolů v ní můžeš listovat a pomocí klávesové zkratky 
-`Ctrl+R` vyhledávat nebo ji celou vypsat příkazem
+`Ctrl+R` vyhledávat. Nebo ji celou vypsat příkazem
 
 	$ history
 
-Jaké všechny kouzla se dají v Terminálu dělat, by vydalo na celý román. 
-V následující kapitole ti představím alespoň některé z 
-nich[...](LINUX.md)
+Pak už stačí jen do Terminálu napsat magický povel
+
+	$ !###
+	
+přičemž znaky `###` nahradíš číslem, ze začátku řádku ve výpisu 
+historie, který by jsi chtěla provést znovu.
+
+
+## Našeptávač
+
+Další velice užitečnou funkcí Terminálu je jeho ochota ti napovídat. 
+Vyzkoušej si sama, co se stane, když do něj napíšeš `py` a dvakrát 
+zmáčkneš klávesu `Tab`
+
+	$ py<Tab><Tab>
+
+A to není všechno. Našeptávač našeptáva i přepínače programů, doplňuje 
+cestu k souborům i jejich názvy. Zkrátka kdykoliv se na chvíli zasekneš 
+a nebudeš vědět co dál, vpomeň si na mě a poklepej levým prsteníčkem na 
+klávesu `<Tab>`.
+
+
+## Kopírovat a vkládat
+
+Jak se v následující kapitole už brzo dozvíš, má klávesova zkratka 
+`Ctrl+C` zcela specifický význam a proto se nedá použít pro kopírování 
+textu jak jsi zvyklá. Proto ti poradím další užitečnou fintu. Text z 
+Terminálu zkopíruješ tím, že ho označíš. To je vše. Na místo kurzoru ho 
+pak vložíš kliknutím prostředním tlačítkem myši, tedy kolečkem. Pokud 
+na své myši nemáš prostřední tlačítko ani kolečku, klikni oběmi jejími 
+oušky najednou.
+
+Na závěr by se hodilo už jen dodat jak Terminál ukončit. Máš několik 
+možností. Nejrychlejší je asi klávesová zkratka `Ctrl+D`, nebo můžeš 
+napsat
+
+	$ exit
+
+případně zavřít celé okno. Jaké další kouzla se dají v Terminálu dělat, 
+by vydalo na celý román. V následující kapitole ti předvedu alespoň 
+některé z nich[...](LINUX.md)

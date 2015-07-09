@@ -13,25 +13,35 @@ centrech propojeny sítí Internet. A ty všechny rozumí jazyku Python.
 Tablet je sice pěkná hračka, ale uznej sama, že komunikovat s počítačem 
 pomocí 104 kláves všemi deseti je přinejmenším desetkrát rychlejší, než 
 jedním prstem klikat na barevné obrázky. Notebook je klávesnice spojená 
-s monitorem v kompaktním provedení a tak právě notebook budu považovat 
-za tvůj osobní počítač.
+s monitorem v kompaktním provedení a tak právě notebook budu uvažovat 
+jako tvůj osobní počítač.
 
 
 ## IPython Notebook
 
-Na svém osobním počítači by jsi už měla umět spustit *IPython Notebook*.
+Notebooky připojené k této příručce se nacházejí v adresáři notebooks 
+uvnitř adresáře Salome, který vznikl, když sis příručku klonovala z 
+GitHubu. Takže, račte vstoupit madam...
 
-Nejednoduší cesta jak se s ním seznámit je si s ním chvíli hrát. Tak 
-prosím otevři ten s názvem **Pýskoviště.ipynb** a sama chvíli objevuj 
-kouzla, která se s ním dají dělat.
+	$ cd Salome/notebooks/
+	
+Spouštění IPython Notebooku z Terminálu se provádí zadáním příkazu
+
+	$ ipython3 notebook
+	
+načež by se ti ve tvém oblíbeném webovém prohlížeči měla otevřít nová 
+karta na adrese <http://localhost:8888/> s přehledem dostupných 
+notebooků. Nejednoduší cesta jak se s ním seznámit je si s ním chvíli 
+hrát. Tak prosím otevři ten s názvem **Pýskoviště.ipynb** a sama chvíli 
+objevuj kouzla, která se s ním dají dělat.
 
 ![Pýskoviště](screenshots/pyskoviste.png)
 
 Předností IPython Notebooku je, že funguje skrze webový prohlížeč, 
-který používáš zcela intuitivně snad každý den. Před očima tak máš 
-webovou stránku, ve které do připravených políček vypisuješ text 
-formátovaný Markdownem, vzorce zapisuješ stejně jako v LaTeXu a kód v 
-jazyce Python. A rovnou vidíš i jeho výstup. Když jsi s výslednou 
-podobou celého notebooku spokojená, můžeš ho exportovat do HTML a 
-vystavit na svých stránkách, nebo jako PDF vytisknout. Není od věci ho 
-průběžně odesílat pomocí Gitu do repositáře na GitHubu.
+který používáš zcela intuitivně snad každý den. Před očima máš webovou 
+stránku, ve které do připravených políček vypisuješ text formátovaný 
+jako Markdown, vzorce zapisuješ stejně jako pro LaTeX a kód v jazyce 
+Python. A rovnou vidíš i jeho výstup. Když jsi s výslednou podobou 
+celého notebooku spokojená, můžeš ho exportovat do HTML a vystavit na 
+svých stránkách, nebo jako PDF vytisknout. Není od věci ho průběžně 
+odesílat pomocí Gitu do repositáře na GitHubu.

@@ -6,5 +6,6 @@
 * [Terminál](XTERM.md)
 * [Linux](LINUX.md)
 * [Git](GIT.md)
+* [Workshop](WORKSHOP.md)
 * [Slovníček](GLOSSARY.md)
 * [O autorovi](AUTHOR.md)

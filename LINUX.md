@@ -14,14 +14,17 @@ příkazů.
 
 Příkaz se skládá z názvu programu, za kterým mohou následovat přepínače 
 ovlivňující jeho chování a na konec parametry, kterými se programu 
-předávají potřebné informace.
+předávají potřebné informace. Název programu bývá velmi často odvozen
+jako zkratka z popisu jeho funkčnosti.
 
-## apropos whatis man
 
-Když nevíš, můžeš se zeptat. Většina programů akceptuje přepínače `-h` 
-nebo `--help` pro zobrazení nápovědy. Nebo ho můžeš spustit jen tak bez 
-přepínačů a parametrů. Buď vypíše nějaké instrukce a skončí, nebo ho 
-můžeš ukončit klávesovou zkratkou `Ctrl+C`.
+## Hledání nápovědy
+
+Když si nevíš rady, zeptej se svého muže. Většina programů 
+akceptuje přepínače `-h` nebo `--help` pro zobrazení nápovědy. Nebo ho 
+prostě spusť jen tak, bez přepínačů a parametrů. Buď vypíše 
+nějaké instrukce a skončí, nebo když se bude tvářít, že nic nedělá tak 
+ho ukonči klávesovou zkratkou `Ctrl+C`.
 
 	$ man
 	Kterou manuálovou stránku si přejete?
@@ -30,14 +33,10 @@ Když jsi si nejsi jistá, můžeš vyhledat všechny manuály na dané téma
 
 	$ apropos python
 
-Pokud chceš jenom vědět co daný program dělá, není nic snazšího než 
+Pokud tě jenom zajímá co daný program dělá, není nic snazšího než 
 zkusit
 
-	$ whatis apropos
-
-Pak už si stačí jen vybrat tu pravou a požadovanou stránku zobrazit
-
-	$ man ipython
+	$ whatis python
 
 Prohlížeč manuálových stránek ukončíš stiskem klávesy `q`. Po stisknutí 
 klávesy `h` získáš nápovědu k prohlížeči, která je platná i pro 
@@ -50,3 +49,54 @@ Alespoň tuhle jedinou by jsi mohla přečíst od začátku až do konce.
 Seznámíš se tak s její strukturou a příště se ti bude v dalších hledat 
 už mnohem rychleji. Třeba taky zjistíš, co znamenají ty čísla za názvy 
 programů.
+
+Jako čtení na dlouhé zímní večery ti mohu doporučit Info stránky, které 
+jsou rovněž součástí Linuxu a obsahuji nepřeberné množství informací. 
+Dostaneš se k nim snadno
+
+	$ info
+
+Veškeré instrukce potřebné k jejich prohlížení se dočteš už v prvním 
+odstavci. Info stránky jsou spíše takové pojednání o Linuxu a jeho 
+programech. Pro praktické účely bohatě stačí občas nahlédnout do 
+manuálových stránek, když si zrovna nejsi jistá, jak se který program 
+přesně používá.
+
+
+## Řešení problémů
+
+Pro sledování využití prostředků počítače, tedy vytížení procesoru a 
+obsazení fyzické paměti i odkládacího prostoru slouží Správci úloh ne 
+nepodobný program TOP(1).
+
+	$ top
+    
+![top](screenshots/top.png)
+
+Úlohy se dají řadit podle vytížení procesoru pomocí klávesové zkratky 
+`Shift+P` nebo podle množství zkonzumované paměti kombinací kláves 
+`Shift+M`. A to nejdůležitější, že se ukončuje klávesou `q`.
+
+Občas se může stát, že některý program začne zlobit a přestane 
+odpovídat. Pak nezbývá nic jiného než ho bez milosti zabít. Pojďme si 
+cvičně takovou situaci nasimulovat. Začni tím, že v Terminálu spustíš 
+program YES(1), který neděla nic jiného, než že pořád dokola vypisuje 
+text, který mu předáš jako parametr.
+
+	$ yes Please kill me!
+	
+Teď použij klávesovou zkratku `Ctrl+Z`, čímž jeho běh pozastavíš. 
+Podívejme se na výpis všech tvých spuštěných programů, ten získaš 
+pomocí příkazu
+
+	$ ps x
+
+Vidíš to zoufalé žadonění o popravu jen pár řádek před koncem? Nebuď 
+tedy sadistická a déle to neprotahuj. Raději jeho trápení rychle a 
+bezbolestně ukonči.
+
+	$ kill -9 ####
+	
+Za znaky `####` musíš dosadit správny PID, tedy to číslo z prvního 
+sloupce, ale dej si dobrý pozor, aby jsi ho opsala ze správného řádku. 
+Jistější přeci jen bude ho zkopírovat a vložit.

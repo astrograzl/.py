@@ -48,9 +48,7 @@ používám já.
 Distribuovaný systém správy verzí [Git](https://git-scm.org) slouží k 
 ukládání a sdílení zdrojového kódu, včetně historie jeho změn. S Gitem 
 nikdy nepřijdeš o svou bakalářku nebo diplomku pár dní před jejím 
-odevzdáním.
-
-Takže si otevři okno Terminálu a napiš do něj tento příkaz:
+odevzdáním. Takže si otevři okno Terminálu a napiš do něj tento příkaz:
 
 	$ sudo yum install git
 
@@ -86,26 +84,14 @@ zjisti verzi Pythonu, který máš nainstalovaný
 
 	$ python --version
 
-Hádám že to bude 2.7.x. Ten je totiž v tvém systému jako výchozí 
-už předinstalován. Ty jsi ale moderní astrofyzička a tak začneme 
-rovnou se současnou verzí 3.4.x.
-
-Vše co pro začátek budeš potřebovat je [IPython Notebook](http://ipython.org/notebook.html),
-respektive [Jupyter](https://jupyter.org), v nějž se vyvinul. Ten 
-nainstaluješ včetně všech jeho závislostí jediným příkazem
+Hádám že to bude 2.7.x. Ten je totiž v tvém systému jako výchozí už 
+předinstalován. Ty jsi ale moderní astrofyzička a tak začneme rovnou s 
+aktuální verzí 3.4.x. Vše co pro začátek budeš potřebovat je
+[IPython Notebook](http://ipython.org/notebook.html), respektive 
+[Jupyter](https://jupyter.org), v nějž se vyvinul. Ten nainstaluješ 
+včetně všech jeho závislostí jediným příkazem
 
 	$ sudo yum install python3-ipython-notebook
 
-Notebooky připojené k této příručce se nacházejí v adresáři notebooks 
-uvnitř adresáře Salome, který vznikl, když sis příručku klonovala z 
-GitHubu. Takže, račte vstoupit madam...
-
-	$ cd Salome/notebooks/
-
-Spouštění IPython Notebooku z Terminálu se provádí zadáním příkazu
-
-	$ ipython3 notebook
-
-načež by se ti ve tvém oblíbeném webovém prohlížeči měla otevřít nová
-karta na adrese <http://localhost:8888/> s přehledem dostupných
-notebooků[...](NOTEBOOK.md)
+A je to! Pojdmě se teď společně podívat, jaké kouzla se s tvým 
+nabušeným notebookem dají dělat[...](NOTEBOOK.md)
