@@ -18,9 +18,9 @@ if __name__ == "__main__":
     print(__doc__)
 ```
 
-V této příručce se dozvíš, jak efektivně ovládnout počítač. Tak aby 
-poslušně a bez odmlouvání vykonal každé tvoje přání. Jazykem, 
-který se omezuje jen na několik základních anglických slovíček:
+V této příručce se dozvíš, jak ovládnout jazyk, jímž si podmaníš 
+počítač, tak aby poslušně a bez odmlouvání vykonal každé tvoje přání. 
+Jazyk, který se omezuje jen na několik základních anglických slovíček:
 
 ```python
 and       del       from      not       while

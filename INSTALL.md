@@ -10,8 +10,8 @@ něco nového naučíš.
 
 ## Stažení
 
-Repozitář se zdrojovým kódem získáš pomocí nástroje Git zadáním 
-následujícího příkazu do okna Terminálu.
+Repositáře se zdrojovým kódem získáš pomocí nástroje Git zadáním 
+následujícího příkazu do okna Terminálu
 
 	$ git clone https://github.com/astrograzl/Salome.git
 
@@ -32,8 +32,8 @@ se bát nemusíš.
 Vidím, že jsi si vybrala [Fedoru](https://getfedora.org). Za to tě mohu 
 jedině pochválit, neboť modrá ti sluší. V jiné distribuci bude příkaz 
 pro instalaci programů rozdílný i názvy balíčků se mohou lišit. Proto 
-zde uvádím tabulku srovnávající Fodoru, Ubuntu a Arch Linux, který 
-používám já.
+zde uvádím tabulku srovnávající Fodoru, Ubuntu a Arch Linux, který sám 
+používám.
 
 | ? | Fedora | Ubuntu | Arch |
 |---|--------|--------|------| 
@@ -48,13 +48,14 @@ používám já.
 Distribuovaný systém správy verzí [Git](https://git-scm.org) slouží k 
 ukládání a sdílení zdrojového kódu, včetně historie jeho změn. S Gitem 
 nikdy nepřijdeš o svou bakalářku nebo diplomku pár dní před jejím 
-odevzdáním. Takže si otevři okno Terminálu a napiš do něj tento příkaz:
+odevzdáním. Takže si prosím otevři okno Terminálu a napiš do něj tento 
+příkaz
 
 	$ sudo yum install git
 
 a zmáčkni `Enter`. Zadej svoje heslo pro ověření, že jsi to skutečně ty 
 a ani nemusíš zadržovat dech, je-li to pro tebe poprvé. Jest-li všechno 
-dobře dopadlo, se můžeš ihned přesvědčit následujícím příkazem:
+dobře dopadlo, se můžeš ihned přesvědčit následujícím příkazem
 
 	$ git tip
 
@@ -67,14 +68,15 @@ Did you mean this?
         tag
 ```
 
-Vidíš? Git je tak milý, že i když mu zadáš neplatný příkaz, tak se 
-pokusí úhádnout, co jsi tím mohla myslet. V tuto chvíli by jsi měla 
-poslechnout jeho rady a zkusit zadat do Terminálu
+Vidíš? Git je tak milý, že i když mu zadáš nesmyslný příkaz, tak se 
+pokusí uhádnout, co jsi tím ve skutečnosti mohla myslet. V tuto chvíli 
+by jsi měla poslechnout jeho rady a zkusit do Terminálu zadat příkaz
 
 	$ git --help
 
-tak získáš alespoň základní nápovědu, jak Git používat a dozvíš se, co 
-skutečně dělá první příkaz, který jsem na tebe zkoušel v úvodu.
+Tak získáš alespoň základní nápovědu, jak Git používat a třeba se i 
+dozvíš, co skutečně dělá onen první příkaz, který jsem na tebe zkoušel 
+hned v úvodu.
 
 
 ## Python
@@ -87,11 +89,10 @@ zjisti verzi Pythonu, který máš nainstalovaný
 Hádám že to bude 2.7.x. Ten je totiž v tvém systému jako výchozí už 
 předinstalován. Ty jsi ale moderní astrofyzička a tak začneme rovnou s 
 aktuální verzí 3.4.x. Vše co pro začátek budeš potřebovat je
-[IPython Notebook](http://ipython.org/notebook.html), respektive 
-[Jupyter](https://jupyter.org), v nějž se vyvinul. Ten nainstaluješ 
+[IPython Notebook](http://ipython.org/notebook.html). Ten nainstaluješ 
 včetně všech jeho závislostí jediným příkazem
 
 	$ sudo yum install python3-ipython-notebook
 
-A je to! Pojdmě se teď společně podívat, jaké kouzla se s tvým 
-nabušeným notebookem dají dělat[...](NOTEBOOK.md)
+A je to! Pojďme se teď společně podívat, jaké mocné kouzla se s tvým 
+nadupaným notebookem dají dělat[...](NOTEBOOK.md)

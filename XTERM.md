@@ -1,20 +1,20 @@
 # Terminál
 
-Za časů pravěkých, když drahé superpočítače obývaly sály výpočetních 
+Za časů pravěkých, když superpočítače obývaly sály výpočetních 
 středisek, jsme k nim přistupovali vzdáleně prostřednictvím modemu 
-skrze pomalou telefonní linku pomocí Terminálu. Ale dnes v době 
-MetaCentra a ADSL i v naší vesnici je situace naprosto stejná. Svět 
-se za tu dobu změnil k nepoznání, ale Terminály nám zůstaly věrny.
+skrze pomalou telefonní linku. Jen pomocí Terminálu. Ale dnes v době 
+MetaCentra a ADSL i v naší vesnici je situace naprosto stejná. Svět se 
+za tu dobu moc nezměnil, ale Terminály nám zůstaly věrny.
 
 ![xterm](screenshots/xterm.png)
 
-Dříve byl Terminál klávesnice a monitor. Dnes je Terminál aplikace jako 
-každá jiná, jenž svůj minimalizmus dotáhla do absolutní dokonalosti. 
-Terminál je prostředník pro komunikaci mezi člověkem a počítačem. 
-Příkazy, které do něj zadáváš představují vstup. Zprávy které ti 
-vypisuje jsou výstup. Ovládání počítače skrze Terminál se v principu 
-neliší od toho, když spolu chatujeme, jen na druhé straně linky nesedí 
-člověk, ale naslouchá stroj.
+Dříve byl Terminál klávesnice a monitor v hranaté krabici. Dnes je 
+Terminál aplikace jako každá jiná, jenž svým minimalizmus dosáhla 
+absolutní dokonalosti. Terminál je prostředník pro komunikaci mezi 
+člověkem a počítačem. Příkazy, které do něj zadáváš představují vstup. 
+Zprávy které ti vypisuje jsou výstup. Ovládání počítače skrze Terminál 
+se v principu neliší od toho, když spolu po večerech chatujeme. Jen na 
+druhé straně linky nesedí člověk, ale naslouchá stroj.
 
 
 ## Bash
@@ -30,11 +30,14 @@ vykonat v shellu.
 ## Skript
 
 Příkazy pro shell můžeš zapsat do textového souboru s příponou `.sh`. 
-Ten předáš shellu ke spuštění a zatím co on jej vykonává ty si můžeš 
-jít třeba nakoupit. Pamatuj, že jakákoliv činnost, kterou na počítači 
-provádíš opakovaně se dá automatizovat.
+Ten předáš shellu ke spuštění například takto
 
 	$ sh muj_skript.sh
+
+A zatím co on jej vykonává ty si můžeš jít třeba nakoupit. Pamatuj, že 
+jakákoliv činnost, kterou na počítači provádíš opakovaně se dá 
+automatizovat. V adresáři scripts nalezneš několik snad užitečných 
+skriptů pro inspiraci.
 
 
 ## Prompt
@@ -80,7 +83,7 @@ Pak už stačí jen do Terminálu napsat magický povel
 
 	$ !###
 	
-přičemž znaky `###` nahradíš číslem, ze začátku řádku ve výpisu 
+přičemž znaky `###` nahradíš číslem ze začátku řádku ve výpisu 
 historie, který by jsi chtěla provést znovu.
 
 
@@ -92,28 +95,28 @@ zmáčkneš klávesu `Tab`
 
 	$ py<Tab><Tab>
 
-A to není všechno. Našeptávač našeptáva i přepínače programů, doplňuje 
+A to není všechno. Našeptávač našeptává i přepínače programů, doplňuje 
 cestu k souborům i jejich názvy. Zkrátka kdykoliv se na chvíli zasekneš 
-a nebudeš vědět co dál, vpomeň si na mě a poklepej levým prsteníčkem na 
-klávesu `<Tab>`.
+a nebudeš vědět co dál, vzpomeň si na mě a poklepej levým prsteníčkem 
+na klávesu `<Tab>`.
 
 
 ## Kopírovat a vkládat
 
-Jak se v následující kapitole už brzo dozvíš, má klávesova zkratka 
-`Ctrl+C` zcela specifický význam a proto se nedá použít pro kopírování 
-textu jak jsi zvyklá. Proto ti poradím další užitečnou fintu. Text z 
-Terminálu zkopíruješ tím, že ho označíš. To je vše. Na místo kurzoru ho 
+Jak se v následující kapitole dozvíš, má klávesová zkratka `Ctrl+C` 
+zcela specifický význam a proto se nedá použít pro kopírování textu jak 
+jsi zvyklá. Proto ti poradím další užitečnou fintu. Text z Terminálu 
+zkopíruješ prostě tím, že ho označíš. To je vše. Na místo kurzoru ho 
 pak vložíš kliknutím prostředním tlačítkem myši, tedy kolečkem. Pokud 
-na své myši nemáš prostřední tlačítko ani kolečku, klikni oběmi jejími 
+na své myši nemáš prostřední tlačítko ani kolečku, klikni oběma jejími 
 oušky najednou.
 
 Na závěr by se hodilo už jen dodat jak Terminál ukončit. Máš několik 
-možností. Nejrychlejší je asi klávesová zkratka `Ctrl+D`, nebo můžeš 
-napsat
+možností. Nejrychlejší je klávesová zkratka `Ctrl+D`, případně můžeš 
+napsat příkaz
 
 	$ exit
 
-případně zavřít celé okno. Jaké další kouzla se dají v Terminálu dělat, 
+nebo zavřít celé okno. Jaké všechny kouzla se dají v Terminálu dělat, 
 by vydalo na celý román. V následující kapitole ti předvedu alespoň 
 některé z nich[...](LINUX.md)
