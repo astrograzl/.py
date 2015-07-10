@@ -6,7 +6,7 @@ na hvězdy a přemýšlím o Vesmíru. Ať už je to ten nekonečně velký, ve
 kterém žijeme, nebo ten nekonečně malý, který jsme si stvořili uvnitř 
 počítače.
 
-![blob](screenshots/blob.jpg)
+![blob](artwork/blob.jpg)
 
 Jelikož ani jeden z nich není o nic víc či miň reálnější než ten druhý 
 a oba jsou naší součástí stejně jako my jejich, rozhodl jsem se 
