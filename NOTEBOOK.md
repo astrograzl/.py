@@ -29,7 +29,7 @@ GitHubu. Takže, račte vstoupit madam...
 	
 Spouštění IPython Notebooku z Terminálu se provádí zadáním příkazu
 
-	$ ipython3 notebook
+	$ ipython notebook
 	
 načež by se ti ve tvém oblíbeném webovém prohlížeči měla otevřít nová 
 karta na adrese <http://localhost:8888/> s přehledem dostupných 
