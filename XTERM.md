@@ -72,10 +72,10 @@ Terminálu a interagující s uživatelem má svůj vlastní prompt.
 
 ## Historie
 
-Terminál si pamatuje historii příkazů, které do něj zadáváš. To je jeho 
+Terminál si pamatuje historii příkazů, které do něj zadáváš. Což je 
 ohromná výhoda, protože příště je nemusíš znovu celé vypisovat. Pomocí 
 šipek nahoru a dolů v ní můžeš listovat a pomocí klávesové zkratky 
-`Ctrl+R` vyhledávat. Nebo ji celou vypsat příkazem
+`Ctrl+R` vyhledávat. Nebo ji rovnou celou vypsat na obrazovku příkazem
 
 	$ history
 
