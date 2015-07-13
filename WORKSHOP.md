@@ -39,15 +39,15 @@ přejmenuj na `xyz.txt`
 	$ mv abc.txt xyz.txt
 
 Tak a teď ten soubor otevři ve svém oblíbeném textovém editoru a něco 
-do něj napiš. Vůbec si s tím nelámej hlavu, neboť ho za chvíli stejně 
-smažeš. Ale přesto až budeš hotova, nezapomeň ho uložit.
-
-Jaký že je můj oblíbený textový editor? V tuto chvíli NANO(1). Než se 
-ho ale rozhodneš taky vyzkoušet, dovolím si přidat jeden tip. Znak `^`, 
-který se objevuje u klávesových zkratek ve spodním menu znamená klávesu 
-`Ctrl`.
+do něj napiš. Moc si s tím nelámej hlavu, neboť ho za chvíli stejně 
+smažeš. Ale přesto až budeš hotova, nezapomeň ho uložit. Jaký že je můj 
+oblíbený textový editor? V tuto chvíli zrovna NANO(1).
 
 	$ nano xyz.txt
+
+Jak to u mě vypadá, když píšu tyto řádky, se můžeš na vlastní oči 
+přesvědčit na obrázku níže, kde je v něm zobrazena nápověda k němu 
+samotnému.
 
 ![nano](screenshots/nano.png)
 

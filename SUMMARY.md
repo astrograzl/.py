@@ -7,5 +7,6 @@
 * [Linux](LINUX.md)
 * [GitHub](GIT.md)
 * [Workshop](WORKSHOP.md)
+* [Virtualizace](VIRTUAL.md)
 * [Slovníček](GLOSSARY.md)
 * [O autorovi](AUTHOR.md)

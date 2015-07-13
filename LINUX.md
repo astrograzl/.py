@@ -13,41 +13,45 @@ konfigurace systému a správy balíčků s programy. V každé distribuci ale
 najdeš program, který emuluje Terminál. Tak si teď pojďme projít 
 několik základních příkazů.
 
-Příkaz se skládá z názvu programu, za kterým mohou následovat jeho 
-argumenty. Těmi jsou přepínače ovlivňující jeho chování a parametry 
-jako například názvy souborů, které má program pro tebe zpracovat. 
-Název programu bývá velmi často tvořen jako zkratka z popisu jeho 
-funkce a slouží tak zároveň i jako mnemotechnická pomůcka. Přepínače 
-programu mívají zpravidla dvě varianty
+Příkaz se skládá z názvu programu, za kterým mohou následovat přepínače 
+ovlivňující jeho chování a parametry, jako například jména souborů, 
+které má program pro tebe zpracovat. Přepínače programu mívají 
+zpravidla dvě varianty a mohou mít i vlastní parametry.
 
-* krátká varianta je uvozena jednou pomlčkou a je tvořena jedním 
-písmenem jako například `-h` pro vypsání nápovědy
+* Krátká varianta přepínače uvozena jednou pomlčkou je tvořena jen 
+jedním písmenem. Parametry se od nich oddělují mezerou. Více krátkých 
+přepínačů bez parametrů můžeš spojit dohromady, a když chceš být 
+extrémně líná, můžeš někdy vynechat i tu pomlčku a ušetřit si tak pár 
+úhozů na klávesnici.
 
-* dlouhá varianta je uvozena dvěma pomlčkami a může být tvořena i 
-několika slovy vzájemně spojenými pomlčkami, jako například 
-`--help-all`
+* Dlouhá varianta přepínače uvozena dvěma pomlčkami je srozumitelnější 
+a tak i vhodnější pro použití ve skriptech. Případné parametry se k 
+němu připojují pomoci znaku `=` rovnáse.
 
-Přepínače mohou mít samy své vlastní parametry. U krátkých přepínačů 
-odděleny mezerou a u dlouhých přepínačů, které se prakticky používají 
-převážně ve skriptech, rovnítkem `=`. Speciální přepínač `--` značí, že 
-za ním následují už jenom parametry pro samotný program. Symbolicky 
-zapsáno vypadá příkaz nějak takto
+* Speciální přepínač `--` ukončuje část příkazu s přepínači a značí, že 
+za ním následují už jenom parametry pro samotný program.
 
-	$ program -p on --prepinac=off -- parametr1 parametr2
+Symbolicky zapsáno může příkaz vypadat například nějak takto
+
+	$ program -xy -z on --prepinac=off -- parametr1 parametr2
 
 
 ## Hledání nápovědy
 
-Většina programů akceptuje přepínače `-h` nebo `--help` pro zobrazení 
-nápovědy. Jejímu psaní věnují vývojáři někdy i více času než samotnému 
-programování. Tím že si ji přečteš jim projevuješ respekt za jejich 
-nezištnou práci. Když si s něčím nevíš rady, zeptej se svého muže. Ten 
-má přehled o všech manuálech, které jsou k programům dostupné.
+Většina programů akceptuje přepínač `-h` nebo `--help` pro zobrazení 
+základní nápovědy o použití programu
 
-	$ man
-	Kterou manuálovou stránku si přejete?
+	$ python --help
 
-Když si nejsi jistá, můžeš vyhledat všechny manuály na dané téma
+Podrobnější informace nalezneš v manuálových stránkách k jednotlivým 
+programům
+
+	$ man python
+
+Prohlížeč manuálových stránek ukončíš stiskem klávesy `q`. Struktůra 
+manualových stránek je popsána v manuálové stránce k programu MAN(1) 
+dostupné po zadání příkazu `$ man man`. Když nevíš kterou konkrétní 
+zobrazit, můžeš vyhledat všechny na dané téma
 
 	$ apropos python
 
@@ -55,18 +59,6 @@ Pokud tě jenom zajímá co daný program dělá, není nic snazšího než
 zkusit
 
 	$ whatis python
-
-Prohlížeč manuálových stránek ukončíš stiskem klávesy `q`. Po stisknutí 
-klávesy `h` získáš nápovědu k prohlížeči, která je platná i pro 
-prohlížeč textových souborů LESS(1). Za prohlédnutí rozhodně stojí i 
-samotná manuálová stránka programu MAN(1).
-
-	$ man man
-
-Alespoň tuhle jedinou by jsi mohla přečíst od začátku až do konce. 
-Seznámíš se tak s její strukturou a příště se ti bude v dalších hledat 
-už mnohem rychleji. Třeba taky zjistíš, co znamenají ty čísla za názvy 
-programů.
 
 Jako čtení na dlouhé zimní večery ti mohu doporučit Info stránky, které 
 jsou rovněž součástí Linuxu a obsahuji nepřeberné množství informací. 
@@ -86,8 +78,7 @@ přesně používá.
 Tak jako Neo v úvodní scéně Matrixu, můžeš zkusit opakovaně stisknout 
 kombinací kláves `Ctrl+C`, pokud se ti bude zdát, že se právě běžící 
 program zasekl. Pro sledování využití prostředků počítače, tedy 
-vytížení procesoru a obsazení fyzické paměti i odkládacího prostoru 
-slouží Správci úloh ne nepodobný program TOP(1).
+vytížení procesoru a zaplnění paměti, slouží program TOP(1).
 
 	$ top
     
@@ -95,12 +86,12 @@ slouží Správci úloh ne nepodobný program TOP(1).
 
 Úlohy se v něm dají řadit podle vytížení procesoru pomocí klávesové 
 zkratky `Shift+P` nebo podle množství zkonzumované paměti kombinací 
-kláves `Shift+M`. A to nejdůležitější, že se ukončuje klávesou `q`.
+kláves `Shift+M`. A to nejdůležitější, ukončuje se taktéž klávesou `q`.
 
 Občas se může stát, že se některý program prostě zblázní a přestane 
 odpovídat. Pak nezbývá nic jiného než ho bez milosti zabít. Pojďme si 
 cvičně takovou situaci nasimulovat. Začni tím, že v Terminálu spustíš 
-program YES(1), který neděla nic jiného, než že pořád dokola vypisuje 
+program YES(1), který neděla nic jiného, než pořád dokola vypisuje 
 text, který mu předáš jako parametr.
 
 	$ yes "All work and no play makes Jack a dull boy"	
@@ -116,9 +107,9 @@ speciální signál
 
 	$ kill -9 ####
 	
-Za znaky `####` dosaď správný PID, tedy to číslo z prvního 
-sloupce, ale dej si dobrý pozor, aby jsi ho opsala ze správného řádku. 
-Jistější přeci jen bude ho zkopírovat a vložit.
+Za znaky `####` dosaď správný PID, tedy to číslo z prvního sloupce, ale 
+dej si dobrý pozor, aby jsi ho opsala ze správného řádku. Jistější 
+přeci jen bude ho zkopírovat a vložit.
 
 
 ## Standardní vstup a výstup
@@ -170,7 +161,7 @@ Od této chvíle se z tebe stává nebezpečná hackerka ;-)
 
 Další předností Linuxu je, že prostřednictvím jednoho počítače můžeš 
 ovládat druhý, klidně až na opačné straně Zeměkoule, aniž by ses musela 
-hnout z pohodlí své pohovky. Program pro přihlášení ke vzdálenému 
+zvednout z pohodlí své pohovky. Program pro přihlášení ke vzdálenému 
 počítači se jmenuje SSH(1) a používá se následovně
 
 	$ ssh -X uživatel@počítač
@@ -212,16 +203,15 @@ klávesové zkratky `Ctrl+D` nebo příkazem `exit`.
 
 Někdy se může stát, že budeš chtít spustit nějaký příkaz, jen pokud 
 předchozí příkaz zkončil úspěšně. Takovou typickou situací je kompilace 
-a instalace speciálních programů. Standardní postup výpadá následovně
+a instalace programů. Standardní postup výpadá následovně
 
 	$ ./configure
 	$ make
 	$ sudo make install
 
 Než čekat až některý krok doběhne do konce, můžeš mezi příkazy použít 
-logický operátor `&&`, který zajistí, že se následující příkaz vykoná 
-jen pokud předchozí příkaz skončil úspěšně. Předchozí tři příkazy se 
-pomocí něj dají přepsat v jeden
+logický operátor `&&`. Předchozí tři příkazy se pomocí něj dají přepsat 
+v jeden
 
 	$ ./configure && make && sudo make install
 
