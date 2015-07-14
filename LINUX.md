@@ -3,9 +3,9 @@
 V dávné době, kdy se příkazy počítači psaly velkými písmeny se zrodil 
 systém pro sdílení strojového času UNIX. Od té doby uplynulo mnoho 
 cyklů během nichž se původní UNIX vyvinul v dnešní Linux. Samotný Linux 
-tvoří jádro operačního systému, nebo-li kernel. Spolu s volně 
-dostupnými programy z rodiny GNU ho získáš v praktickém balení doslova 
-na stříbrném podnose jako takzvanou distribuci.
+tvoří jádro operačního systému, neboli kernel. Spolu s volně 
+dostupnými programy z rodiny GNU ho získáš v praktickém balení, doslova 
+na stříbrném podnose, jako takzvanou distribuci.
 
 Jednotlivé distribuce se navzájem liší jen v detailech. Ve výchozím 
 grafickém prostředí. Ve verzích obsažených programů. Způsobu 
@@ -26,7 +26,7 @@ extrémně líná, můžeš někdy vynechat i tu pomlčku a ušetřit si tak pá
 
 * Dlouhá varianta přepínače uvozena dvěma pomlčkami je srozumitelnější 
 a tak i vhodnější pro použití ve skriptech. Případné parametry se k 
-němu připojují pomoci znaku `=` rovnáse.
+němu připojují pomoci znaku rovnáse `=`.
 
 * Speciální přepínač `--` ukončuje část příkazu s přepínači a značí, že 
 za ním následují už jenom parametry pro samotný program.
@@ -39,19 +39,19 @@ Symbolicky zapsáno může příkaz vypadat například nějak takto
 ## Hledání nápovědy
 
 Většina programů akceptuje přepínač `-h` nebo `--help` pro zobrazení 
-základní nápovědy o použití programu
+základní nápovědy o jeho použití
 
 	$ python --help
 
-Podrobnější informace nalezneš v manuálových stránkách k jednotlivým 
-programům
+Podrobnější informace nalezneš v **manuálových stránkách** k 
+jednotlivým programům
 
 	$ man python
 
-Prohlížeč manuálových stránek ukončíš stiskem klávesy `q`. Struktůra 
-manualových stránek je popsána v manuálové stránce k programu MAN(1) 
-dostupné po zadání příkazu `$ man man`. Když nevíš kterou konkrétní 
-zobrazit, můžeš vyhledat všechny na dané téma
+Prohlížeč manuálových stránek ukončíš stiskem klávesy `q` a nápovědu k 
+němu získáš klávesou `h`. Struktůra manualových stránek je 
+popsána v manuálové stránce k programu MAN(1). Když nevíš kterou 
+konkrétní zobrazit, můžeš vyhledat všechny na dané téma
 
 	$ apropos python
 
@@ -61,32 +61,25 @@ zkusit
 	$ whatis python
 
 Jako čtení na dlouhé zimní večery ti mohu doporučit Info stránky, které 
-jsou rovněž součástí Linuxu a obsahuji nepřeberné množství informací. 
-Dostaneš se k nim snadno
+obsahuji nepřeberné množství informací. Dostaneš se k nim snadno
 
 	$ info
 
 Veškeré instrukce potřebné k jejich prohlížení se dočteš už v prvním 
-odstavci. Info stránky jsou spíše takové pojednání o Linuxu a jeho 
-programech. Pro praktické účely bohatě stačí občas nahlédnout do 
-manuálových stránek, když si zrovna nejsi jistá, jak se který program 
-přesně používá.
+odstavci.
 
 
 ## Řešení problémů
 
-Tak jako Neo v úvodní scéně Matrixu, můžeš zkusit opakovaně stisknout 
-kombinací kláves `Ctrl+C`, pokud se ti bude zdát, že se právě běžící 
-program zasekl. Pro sledování využití prostředků počítače, tedy 
-vytížení procesoru a zaplnění paměti, slouží program TOP(1).
+Pokud se ti bude zdát, že se právě běžící program zasekl, můžeš zkusit 
+opakovaně stisknout kombinaci kláves `Ctrl+C` a tím jeho běh ukončit. 
+Pro sledování využití prostředků počítače, slouží program TOP(1).
 
 	$ top
     
-![top](screenshots/top.png)
-
-Úlohy se v něm dají řadit podle vytížení procesoru pomocí klávesové 
-zkratky `Shift+P` nebo podle množství zkonzumované paměti kombinací 
-kláves `Shift+M`. A to nejdůležitější, ukončuje se taktéž klávesou `q`.
+Úlohy se v něm dají řadit podle vytížení procesoru klávesovou zkratkou 
+`Shift+P` nebo podle množství zkonzumované paměti pomoci `Shift+M`. 
+Ukončuje se klávesou `q` a nápověda se zobrazí po stisknutí `h`.
 
 Občas se může stát, že se některý program prostě zblázní a přestane 
 odpovídat. Pak nezbývá nic jiného než ho bez milosti zabít. Pojďme si 
@@ -112,7 +105,7 @@ dej si dobrý pozor, aby jsi ho opsala ze správného řádku. Jistější
 přeci jen bude ho zkopírovat a vložit.
 
 
-## Standardní vstup a výstup
+## Přesměrování
 
 Počítač s tebou komunikuje pomocí takzvaného standardního vstupu, 
 výstupu a chybového výstupu. Vstup představuje klávesnice, pomocí které 
@@ -122,26 +115,35 @@ instrukce, které by jsi jinak musela zadávat ručně
 
 	$ program < vstup.in
 
-Stejně tak i výstup programu můžeš podobně přesměrovat do souboru
+Stejně tak i výstup programu můžeš přesměrovat do souboru
 
 	$ program > vystup.out
 
 Chybový výstup můžeš buď přesměrovat zvlášť pomocí `2>` nebo můžeš oba 
-výstupy přesměrovat do jednoho souboru použitím `&>`. Pokud se má 
-výstup jednoho programu stát zároveň i vstupem pro druhý program, 
-použij tak zvanou roupu, neboli PIPE
+výstupy přesměrovat najednou použitím `&>`. Pokud se má výstup jednoho 
+programu stát zároveň i vstupem pro druhý program, použij takzvanou 
+roupu, neboli PIPE
 
 	$ program1 | program2
 
 Chceš-li použít standardní vstup nebo výstup v místě, kde program 
-očekává běžný soubor, napiš místo něj pomlčku `-`.
+očekává název souboru, napiš místo něj pomlčku `-`. Pokud budeš chtít, 
+aby program zapisoval zároveň na standardní výstup i do souboru, použij 
+program TEE(1).
+
+
+### Černá díra
+
+V Linuxu existuje speciální soubor `/dev/null`, kam můžeš přesměrovat 
+výstup programu, pokud tě vůbec nezajímá co vypisuje. A ani se nemusíš 
+obávat, že by se někdy zaplnil, je to nemožné.
 
 
 ## Spouštění úloh na pozadí
 
 Spuštěný program po dobu svého běhu blokuje Terminál pro další použití. 
 To můžeš obejít tak, že danou úlohu spustíš na pozadí přidáním znaku 
-`&` na konec příkazu
+ampersand `&` na konec příkazu
 
 	$ program &
 
@@ -149,12 +151,13 @@ Potřebuješ-li do pozadí přenést již běžící program, napřed ho
 pozastavíš pomocí klávesové zkratky `Ctrl+Z` a následně použiješ příkaz 
 `bg`. Naproti tomu příkaz `fg` přepne program zpátky do popředí.
 
-Všechny tyto techniky se dají kombinovat, tak že za chvíli budeš 
-naprosto s přehledem používat třeba takovéto konstrukce příkazů
+
+Všechny tyto techniky se dají kombinovat tak, že za chvíli budeš 
+naprosto s přehledem používat i složitější konstrukce příkazů
 
 	$ program1 < vstup.in | program2 | program3 > vystup.out &
 
-Od této chvíle se z tebe stává nebezpečná hackerka ;-)
+V tuto chvíle se z tebe stala vážně nebezpečná hackerka ;-)
 
 
 ## Vzdálené přihlášení
@@ -190,13 +193,13 @@ znovu připojit.
 
 Teď můžeš spustit nějaký program, třeba známý TOP(1) a pomoci kombinace 
 kláves `Ctrl+A Ctrl+D` se od screenu odpojit. Program v něm bude běžet 
-dál i po odhlášení se ze vzdáleného počítače. Znovu se k němu připojíš 
+dál i po odhlášení ze vzdáleného počítače. Znovu se k němu připojíš 
 zadáním
 
 	$ screen -r
 
-Pokud screen už dále nepotřebuješ, ukonči ho jak jsi zvyklá, buď pomocí 
-klávesové zkratky `Ctrl+D` nebo příkazem `exit`.
+Pokud screen už dále nepotřebuješ, ukonči ho jak jsi zvyklá, buď 
+klávesovou zkratkou `Ctrl+D` nebo příkazem `exit`.
 
 
 ## Podmíněné spuštění

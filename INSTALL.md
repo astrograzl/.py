@@ -3,9 +3,9 @@
 Ačkoliv je tato příručka dostupná on-line, na adrese 
 <http://astrograzl.gitbooks.io/salome/>, je výhodné si stáhnout i její 
 zdrojové kódy z repositáře <https://github.com/astrograzl/salome/>. 
-Tím, kromě vlastní kopie, získáš i možnost zkoumat jak byla tvořena. 
-Můžeš mi posílat návrhy na vylepšení a opravy chyb. Ale hlavně se tím i 
-něco nového naučíš.
+Tím, kromě vlastní kopie, získáš i možnost zkoumat jak byla tvořena 
+či spouštět interaktivní tutoriály. Budeš mi moct posílat návrhy na 
+vylepšení i opravy chyb. Ale hlavně se tím i něco nového naučíš.
 
 
 ## Stažení
@@ -17,7 +17,7 @@ následujícího příkazu do okna Terminálu
 
 Že žádný Git nemáš a o nějakém Terminálu jsi v životě neslyšela vůbec 
 nevadí. Celá příručka je sice plná odborných termínů okolo počítačů, 
-ale se slovníčkem na konci se s nimi jistě brzo skamarádíš.
+ale než dojdeš ke slovníčku na konci, tak se s nimi ještě skamarádíš.
 
 
 ## Linux

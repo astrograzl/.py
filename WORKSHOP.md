@@ -1,8 +1,8 @@
 # Workshop
 
-Už by jsi měla mít dostatek indícií, aby jsi zvládla i něco 
-praktického, takže si trochu zacvičíme. Napřed přejdi do adresáře 
-`/tmp`, který slouží jako dočasné odkladiště.
+V tuto chvíli by jsi již měla mít dostatek indícií, aby jsi zvládla i 
+něco praktického, takže si trochu zacvičíme. Napřed přejdi do adresáře 
+`/tmp`, který slouží jako dočasné odkladiště
 
 	$ cd /tmp
 
@@ -11,39 +11,30 @@ se v něm nacházejí a komu patří
 
 	$ ls -la
 
-Na otázku, kdo jsi ty, ti odpoví program WHOAMI(1). Jeho výstupu a 
-malého kouzla v Bashi využiješ pro vytvoření složky se svým jménem
+Na otázku, kdo jsi ty, ti odpoví program WHOAMI(1). Nový adresář 
+vytvoříš příkazem MKDIR(1). Tobě teď bude stačit jen náhodně pojmenový 
+adresář. Ten vytvoříš příkazem MKTEMP(1). Jeho výstupu a malého kouzla 
+v Bashi použiješ k tomu, aby jsi do něj rovnou přešla
 
-	$ mkdir $(whoami)
+	$ cd $(mktemp -d)
 
-Nyní vejdi do své složky pomocí příkazu `cd`, ale aby jsi nemusela psát 
-na klávesnici víc než je nezbytně nutné, použij klávesovou zkratku 
-`Alt+.`, která doplní posledně použitý parametr
+O své aktuální poloze se můžeš přesvědčit vypsáním pracovního adresáře 
+příkazem PWD(1). Pro další použití si tuto cestu ulož do proměnné 
+`TEMP`
 
-	$ cd <Alt+.>
+	$ TEMP=$(pwd)
 
-O své aktuální poloze se můžeš přesvědčit vypsáním pracovního adresáře
+Že se v ní skutečně nachází cesta k aktuálnímu adresáři se přesvědčíš 
+snadno
 
-	$ pwd
-	/tmp/...
+	$ echo $TEMP
 
-Teď se pomocí programu TOUCH(1) dotkni souboru `abc.txt`. Pokud ten 
-ještě neexistuje, bude vytvořen, jinak dojde jen k letmému doteku, 
-který změní čas jeho posledního přístupu
-
-	$ touch abc.txt
-
-Když teď nad tím přemýšlím, tak to asi nebyl nejlepší nápad. Raději ho 
-přejmenuj na `xyz.txt`
-
-	$ mv abc.txt xyz.txt
-
-Tak a teď ten soubor otevři ve svém oblíbeném textovém editoru a něco 
+Ve svém oblíbeném textovém editoru vytvoř nový soubor a něco 
 do něj napiš. Moc si s tím nelámej hlavu, neboť ho za chvíli stejně 
 smažeš. Ale přesto až budeš hotova, nezapomeň ho uložit. Jaký že je můj 
 oblíbený textový editor? V tuto chvíli zrovna NANO(1).
 
-	$ nano xyz.txt
+	$ nano abc.txt
 
 Jak to u mě vypadá, když píšu tyto řádky, se můžeš na vlastní oči 
 přesvědčit na obrázku níže, kde je v něm zobrazena nápověda k němu 
@@ -51,14 +42,19 @@ samotnému.
 
 ![nano](screenshots/nano.png)
 
+Nelíbí se ti název souboru? Není nic snazšího, než ho změnit.
+
+	$ mv abc.txt xyz.txt
+
 Nejednoduší způsob jak vypsat obsah souboru na obrazovku je <!-- kočička -->
 
 	$ cat xyz.txt 
 
 Je-li moc dlouhý, že se na ní celý nevejde, použij raději program 
-MORE(1) nebo ještě lépe LESS(1). Jaká je jeho skutečná velikost 
-prozradí program DU(1). Počet řádek, slov a znaků zjistíš pomocí 
-programu WC(1).
+MORE(1) nebo ještě lépe LESS(1). Program HEAD(1) zobrazí jen prvních 10 
+řádků, kdežto program TAIL(1) jen posledních 10, pokud si ovšem 
+neřekneš jinak. Jaká je jeho skutečná velikost prozradí program DU(1). 
+Počet řádek, slov a znaků zjistíš pomocí programu WC(1).
 
 Pro jistotu si udělej jeho kopii, nikdy nevíš, kdy se ti bude hodit
 
@@ -72,20 +68,18 @@ přejít o adresář výš
 
 	$ cd ..
 
-a smazat i celý svůj adresář
+a smazat i celý dočasný adresář
 
-	$ rmdir $(whoami)
+	$ rmdir $TEMP
 
 A-ha! Co se stalo? Program RMDIR(1) dokáže smazat jedině prázdný 
 adresář. Takže buď napřed smažeš všechny soubory v něm obsažené a pak i 
 jej samotný, nebo to celé uděláš najednou
 
-	$ rm -r $(whoami)
+	$ rm -r $TEMP
 	
 Až budeš potvrzovat, že ho chceš skutečně smazat, buď si tím naprosto 
 jistá. Žádná cesta zpátky už nevede.
-
-Šikovná holka ;-)
 
 
 ## Hledání (v) souboru
@@ -97,6 +91,6 @@ specifičtější hledání podle nejrůznějších parametrů se hodí program
 FIND(1). Pokud potřebuješ hledat uvnitř textových souborů, tak k tomu 
 účelu slouží program GREP(1).
 
-> Pomoz mi prosím najít kočičku, která se ztratila někde v gitě 
-> a teď tam úzkostlivě mňauká!
-<!-- `grep -sh kočička .git*` -->
+> Pomoz mi prosím najít kočičku, která se ztratila někde v gitě a teď 
+> tam úzkostlivě mňauká!
+<!-- `grep -sh mňau .git*` -->

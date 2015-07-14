@@ -4,24 +4,21 @@ Za časů pravěkých, když superpočítače obývaly sály výpočetních
 středisek, jsme k nim přistupovali vzdáleně prostřednictvím modemu 
 skrze pomalou telefonní linku. Jen pomocí Terminálu. Ale dnes v době 
 MetaCentra a ADSL i v naší vesnici je situace naprosto stejná. Svět se 
-za tu dobu moc nezměnil, ale Terminály nám zůstaly věrny.
-
-![xterm](screenshots/xterm.png)
-
-Dříve byl Terminál klávesnice a monitor v hranaté krabici. Dnes je 
-Terminál aplikace jako každá jiná, jenž svým minimalizmus dosáhla 
-absolutní dokonalosti. Terminál je prostředník pro komunikaci mezi 
-člověkem a počítačem. Příkazy, které do něj zadáváš představují vstup. 
-Zprávy které ti vypisuje jsou výstup. Ovládání počítače skrze Terminál 
-se v principu neliší od toho, když spolu po večerech chatujeme. Jen na 
-druhé straně linky nesedí člověk, ale naslouchá stroj.
+za tu dobu moc nezměnil, ale Terminály nám zůstaly věrny. Dříve byl 
+Terminál klávesnice a monitor v hranaté krabici. Dnes je Terminál 
+aplikace jako každá jiná, jenž svým minimalizmem dosáhla absolutní 
+dokonalosti. Terminál je prostředník pro komunikaci mezi člověkem a 
+počítačem. Příkazy, které do něj zadáváš představují vstup. Zprávy 
+které ti vypisuje jsou výstup. Ovládání počítače skrze Terminál se v 
+principu neliší od toho, když spolu po večerech chatujeme. Jen na druhé 
+straně linky nesedí člověk, ale naslouchá stroj.
 
 
 ## Bash
 
 Terminál jako takový je v podstatě jen kontejner pro další programy. 
 První se kterým přijdeš do kontaktu je takzvaný shell. V Linuxu 
-konkrétně Bash. On interpretuje příkazy, které mu zadáváš, případně 
+konkrétně Bash. To on interpretuje příkazy, které mu zadáváš, případně 
 spouští další programy podle potřeby. Ovládání počítače pomocí shellu 
 je už pokročilou magií. Není činnost na počítači, která by nešla 
 vykonat v shellu.
@@ -30,9 +27,9 @@ vykonat v shellu.
 ## Skript
 
 Příkazy pro shell můžeš zapsat do textového souboru s příponou `.sh`. 
-Ten předáš shellu ke spuštění například takto
+Ten předáš Bashi ke spuštění například takto
 
-	$ sh muj_skript.sh
+	$ bash muj_skript.sh
 
 A zatím co on jej vykonává ty si můžeš jít třeba nakoupit. Pamatuj, že 
 jakákoliv činnost, kterou na počítači provádíš opakovaně se dá 
@@ -47,6 +44,8 @@ ti shell dává najevo, že od tebe očekává příkazy. Jeho symbolický zápi
 je uložen v proměnné prostředí `PS1`. Ostatně zkus si ji vypsat sama
 
 	$ echo $PS1
+
+![prompt](screenshots/prompt.png)
 
 Normálně nebývá tak dlouhý jako můj, ale na druhou stranu mi tak 
 poskytuje dostatek informací.
@@ -98,7 +97,7 @@ zmáčkneš klávesu `Tab`
 A to není všechno. Našeptávač našeptává i přepínače programů, doplňuje 
 cestu k souborům i jejich názvy. Zkrátka kdykoliv se na chvíli zasekneš 
 a nebudeš vědět co dál, vzpomeň si na mě a poklepej levým prsteníčkem 
-na klávesu `<Tab>`.
+na klávesu `Tab`.
 
 
 ## Kopírovat a vkládat
@@ -111,12 +110,12 @@ pak vložíš kliknutím prostředním tlačítkem myši, tedy kolečkem. Pokud
 na své myši nemáš prostřední tlačítko ani kolečku, klikni oběma jejími 
 oušky najednou.
 
-Na závěr by se hodilo už jen dodat jak Terminál ukončit. Máš několik 
+Na závěr by se hodilo dodat jak Terminál ukončit. Máš několik 
 možností. Nejrychlejší je klávesová zkratka `Ctrl+D`, případně můžeš 
 napsat příkaz
 
 	$ exit
 
 nebo zavřít celé okno. Jaké všechny kouzla se dají v Terminálu dělat, 
-by vydalo na celý román. V následující kapitole ti předvedu alespoň 
+by vydalo na celý román. V následující kapitole si vyzkoušíš alespoň 
 některé z nich[...](LINUX.md)
