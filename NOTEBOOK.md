@@ -47,4 +47,4 @@ Markdown, vzorce zapisuješ stejně jako pro LaTeX a kód v jazyce Python
 a zároveň vidíš i jeho výstup. Když jsi s výslednou podobou celého 
 notebooku spokojená, můžeš ho exportovat do HTML a vystavit na svých 
 stránkách, nebo jako PDF vytisknout. A rozhodně vůbec není na škodu ho 
-průběžně odesílat pomocí Gitu do repositáře na GitHubu[...](GIT.md)
+průběžně odesílat pomocí Gitu do repositáře na GitHubu[...](GITHUB.md)

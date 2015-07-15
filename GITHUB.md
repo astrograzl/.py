@@ -137,4 +137,4 @@ klidně smazat
 	$ git branch --delete $(whoami)
 
 V této příručce pak zůstaneš zapsaná už navěky jako moderní 
-astrofyzička[...](XTERM.md)
+astrofyzička[...](TERMINAL.md)
