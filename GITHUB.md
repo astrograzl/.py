@@ -60,7 +60,7 @@ příkazu, se otevře textový editor, který sis zvolila v nastavení Gitu
 	$ git commit
 
 Do něj popiš jaké změny jsi provedla tak, aby jim rozumělo i tvé 
-budoucí `já`, které ho bude číst. Po ukončení editoru (nezapomeň soubor 
+budoucí *já*, které ho bude číst. Po ukončení editoru (nezapomeň soubor 
 uložit), můžeš svůj příspěvek odeslat do repositáře na GitHubu
 
 	$ git push
@@ -129,12 +129,12 @@ Nyní se můžeš přepnout zpět do hlavní větve repositáře
 
 Po nějakém čase znovu aktualizuj repositář z původního umístění
 
-	$ git pull upstream
+	$ git pull upstream master
 
-Až uvidíš, že jsem tvojí změnu akceptoval, můžeš svou pracovní větev 
-klidně smazat
+Až uvidíš, že jsem tvojí změnu akceptoval, můžeš svou pracovní větev s 
+klidným svědomím smazat
 
 	$ git branch --delete $(whoami)
 
-V této příručce pak zůstaneš zapsaná už navěky jako moderní 
-astrofyzička[...](TERMINAL.md)
+V této příručce zůstaneš už navěky zapsaná jako moderní 
+astrofyzička[...](MEMORIAL.md)
