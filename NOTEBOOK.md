@@ -22,9 +22,9 @@ pracovní stanice.
 
 ## IPython Notebook
 
-Tutoriály připojené k této příručce se nacházejí v adresáři notebooks 
-uvnitř adresáře Salome, který vznikl, když sis příručku klonovala Gitem 
-z GitHubu. Takže račte do ní vstoupit madam
+Tutoriály připojené k této příručce se nacházejí v adresáři `notebooks` 
+uvnitř adresáře `Salome`, který vznikl, když sis příručku klonovala 
+Gitem z GitHubu. Takže račte do ní vstoupit madam
 
 	$ cd Salome/notebooks/
 	
