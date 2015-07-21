@@ -73,7 +73,7 @@ odstavci.
 
 Pokud se ti bude zdát, že se právě běžící program zasekl, můžeš zkusit 
 opakovaně stisknout kombinaci kláves `Ctrl+C` a tím jeho běh ukončit. 
-Pro sledování využití prostředků počítače, slouží program TOP(1).
+Pro sledování využití prostředků počítače, slouží program `TOP`.
 
 	$ top
     
@@ -84,7 +84,7 @@ Ukončuje se klávesou `q` a nápověda se zobrazí po stisknutí `h`.
 Občas se může stát, že se některý program prostě zblázní a přestane 
 odpovídat. Pak nezbývá nic jiného než ho bez milosti zabít. Pojďme si 
 cvičně takovou situaci nasimulovat. Začni tím, že v Terminálu spustíš 
-program YES(1), který neděla nic jiného, než pořád dokola vypisuje 
+program `YES`, který neděla nic jiného, než pořád dokola vypisuje 
 text, který mu předáš jako parametr.
 
 	$ yes "All work and no play makes Jack a dull boy"	
@@ -129,7 +129,7 @@ roupu, neboli PIPE
 Chceš-li použít standardní vstup nebo výstup v místě, kde program 
 očekává název souboru, napiš místo něj pomlčku `-`. Pokud budeš chtít, 
 aby program zapisoval zároveň na standardní výstup i do souboru, použij 
-program TEE(1).
+program `TEE`.
 
 
 ### Černá díra
@@ -165,7 +165,7 @@ V tuto chvíle se z tebe stala vážně nebezpečná hackerka ;-)
 Další předností Linuxu je, že prostřednictvím jednoho počítače můžeš 
 ovládat druhý, klidně až na opačné straně Zeměkoule, aniž by ses musela 
 zvednout z pohodlí své pohovky. Program pro přihlášení ke vzdálenému 
-počítači se jmenuje SSH(1) a používá se následovně
+počítači se jmenuje `SSH` a používá se následovně
 
 	$ ssh -X uživatel@počítač
 
@@ -180,18 +180,18 @@ vzdáleném počítači, jejich výstup se zobrazuje na tvém vlastním.
 Na co by sis měla dát pozor je, že při ukončení spojení se vzdáleným 
 počítačem se automaticky ukončí i všechny tvoje úlohy běžící na pozadí. 
 Proto je třeba abys byla prozíravá a myslela na to, ještě dřív než je 
-spustíš. Jednou z možností je použití příkazu NOHUP(1) spolu se 
+spustíš. Jednou z možností je použití příkazu `NOHUP` spolu se 
 spuštěním programu na pozadí.
 
 	$ nohup ... &
 	
-Druhou možností je použití programu SCREEN(1), který ti vytvoří 
+Druhou možností je použití programu `SCREEN`, který ti vytvoří 
 virtuální obrazovku, od které se můžeš bez obav odpojit a posléze k ní 
 znovu připojit.
 
 	$ screen
 
-Teď můžeš spustit nějaký program, třeba známý TOP(1) a pomoci kombinace 
+Teď můžeš spustit nějaký program, třeba známý `TOP` a pomoci kombinace 
 kláves `Ctrl+A Ctrl+D` se od screenu odpojit. Program v něm bude běžet 
 dál i po odhlášení ze vzdáleného počítače. Znovu se k němu připojíš 
 zadáním

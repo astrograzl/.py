@@ -11,16 +11,15 @@ se v něm nacházejí a komu patří
 
 	$ ls -la
 
-Na otázku, kdo jsi ty, ti odpoví program WHOAMI(1). Nový adresář 
-vytvoříš příkazem MKDIR(1). Tobě teď bude stačit jen náhodně pojmenový 
-adresář. Ten vytvoříš příkazem MKTEMP(1). Jeho výstupu a malého kouzla 
-v Bashi použiješ k tomu, aby jsi do něj rovnou přešla
+Na otázku, kdo jsi ty, ti odpoví program `WHOAMI`. Nový adresář 
+vytvoříš příkazem `MKDIR`. Tobě teď bude stačit jen náhodně pojmenový 
+adresář. Ten vytvoříš příkazem `MKTEMP`. Jeho výstupu a malého kouzla v 
+Bashi použiješ k tomu, aby jsi do něj rovnou přešla
 
 	$ cd $(mktemp -d)
 
 O své aktuální poloze se můžeš přesvědčit vypsáním pracovního adresáře 
-příkazem PWD(1). Pro další použití si tuto cestu ulož do proměnné 
-`TEMP`
+příkazem `PWD`. Pro další použití si tuto cestu ulož do proměnné `TEMP`
 
 	$ TEMP=$(pwd)
 
@@ -29,10 +28,10 @@ snadno
 
 	$ echo $TEMP
 
-Ve svém oblíbeném textovém editoru vytvoř nový soubor a něco 
-do něj napiš. Moc si s tím nelámej hlavu, neboť ho za chvíli stejně 
-smažeš. Ale přesto až budeš hotova, nezapomeň ho uložit. Jaký že je můj 
-oblíbený textový editor? V tuto chvíli zrovna NANO(1).
+Ve svém oblíbeném textovém editoru vytvoř nový soubor a něco do něj 
+napiš. Moc si s tím nelámej hlavu, neboť ho za chvíli stejně smažeš. 
+Ale přesto až budeš hotova, nezapomeň ho uložit. Jaký že je můj 
+oblíbený textový editor? V tuto chvíli zrovna `NANO`.
 
 	$ nano abc.txt
 
@@ -51,10 +50,10 @@ Nejednoduší způsob jak vypsat obsah souboru na obrazovku je <!-- kočička --
 	$ cat xyz.txt 
 
 Je-li moc dlouhý, že se na ní celý nevejde, použij raději program 
-MORE(1) nebo ještě lépe LESS(1). Program HEAD(1) zobrazí jen prvních 10 
-řádků, kdežto program TAIL(1) jen posledních 10, pokud si ovšem 
-neřekneš jinak. Jaká je jeho skutečná velikost prozradí program DU(1). 
-Počet řádek, slov a znaků zjistíš pomocí programu WC(1).
+`MORE` nebo ještě lépe `LESS`. Program `HEAD` zobrazí jen prvních 10 
+řádků, kdežto program `TAIL` jen posledních 10, pokud si ovšem neřekneš 
+jinak. Jaká je jeho skutečná velikost prozradí program `DU`. Počet 
+řádek, slov a znaků v souboru zjistíš pomocí programu `WC`.
 
 Pro jistotu si udělej jeho kopii, nikdy nevíš, kdy se ti bude hodit
 
@@ -72,7 +71,7 @@ a smazat i celý dočasný adresář
 
 	$ rmdir $TEMP
 
-A-ha! Co se stalo? Program RMDIR(1) dokáže smazat jedině prázdný 
+A-ha! Co se stalo? Program `RMDIR` dokáže smazat jedině prázdný 
 adresář. Takže buď napřed smažeš všechny soubory v něm obsažené a pak i 
 jej samotný, nebo to celé uděláš najednou
 
@@ -86,10 +85,10 @@ jistá. Žádná cesta zpátky už nevede.
 
 Věci se ti samy ztrácejí, ale v Linuxu není těžké je opětovně najít, i 
 když přesně nevíš co vlastně hledáš. Pokud tušíš alespoň název souboru 
-nebo znáš kousek cesty k němu, použij program LOCATE(1). Pro 
+nebo znáš kousek cesty k němu, použij program `LOCATE`. Pro 
 specifičtější hledání podle nejrůznějších parametrů se hodí program 
-FIND(1). Pokud potřebuješ hledat uvnitř textových souborů, tak k tomu 
-účelu slouží program GREP(1).
+`FIND`. Pokud potřebuješ hledat uvnitř textových souborů, tak k tomu 
+účelu slouží program `GREP`.
 
 > Pomoz mi prosím najít kočičku, která se ztratila někde v gitě a teď 
 > tam úzkostlivě mňauká!

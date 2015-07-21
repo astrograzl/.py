@@ -18,9 +18,9 @@ straně linky nesedí člověk, ale naslouchá stroj.
 
 Terminál jako takový je v podstatě jen kontejner pro další programy. 
 První se kterým přijdeš do kontaktu je takzvaný shell. V Linuxu 
-konkrétně Bash. To on interpretuje příkazy, které mu zadáváš, případně 
-spouští další programy podle potřeby. Ovládání počítače pomocí shellu 
-je už pokročilou magií. Není činnost na počítači, která by nešla 
+konkrétně `BASH`. To on interpretuje příkazy, které mu zadáváš, 
+případně spouští další programy podle potřeby. Ovládání počítače pomocí 
+shellu je už pokročilou magií. Není činnost na počítači, která by nešla 
 vykonat v shellu.
 
 
@@ -31,9 +31,9 @@ Ten předáš Bashi ke spuštění například takto
 
 	$ bash muj_skript.sh
 
-A zatím co on jej vykonává ty si můžeš jít třeba nakoupit. Pamatuj, že 
+A zatím co on je vykonává ty si můžeš jít třeba nakoupit. Pamatuj, že 
 jakákoliv činnost, kterou na počítači provádíš opakovaně se dá 
-automatizovat. V adresáři scripts nalezneš několik snad užitečných 
+automatizovat. V adresáři `scripts` nalezneš několik snad užitečných 
 skriptů pro inspiraci.
 
 
