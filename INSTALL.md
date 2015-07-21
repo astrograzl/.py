@@ -10,7 +10,7 @@ vylepšení i opravy chyb. Ale hlavně se tím i něco nového naučíš.
 
 ## Stažení
 
-Repositáře se zdrojovým kódem získáš pomocí nástroje Git zadáním 
+Repositáře se zdrojovým kódem získáš pomocí nástroje `GIT` zadáním 
 následujícího příkazu do okna Terminálu
 
 	$ git clone https://github.com/astrograzl/Salome.git
@@ -31,16 +31,16 @@ se bát nemusíš.
 
 Vidím, že jsi si vybrala [Fedoru](https://getfedora.org). Za to tě mohu 
 jedině pochválit, neboť modrá ti sluší. V jiné distribuci bude příkaz 
-pro instalaci programů rozdílný i názvy balíčků se mohou lišit. Proto 
-zde uvádím tabulku srovnávající Fodoru, Ubuntu a Arch Linux, který sám 
-používám.
+pro instalaci programů rozdílný i názvy a verze balíčků se mohou lišit. 
+Proto zde uvádím tabulku srovnávající aktuální verzi Fedory, Ubuntu a 
+Archu, který sám používám.
 
-| ? | Fedora | Ubuntu | Arch |
-|---|--------|--------|------| 
+| ? | Fedora (22) | Ubuntu (15.04) | Arch |
+|---|-------------|----------------|------| 
 | Balík | rpm |  deb | tar.xz |
-| Python | 2.7.x | 2.7.x | 3.4.x |
-| Instalace | `# yum install ...` | `# apt-get install ...` | `# pacman -S ...` |
-| IPython Notebook | `python3-ipython-notebook` | `ipython3-notebook` | `ipython-notebook` |
+| Instalace | `# dnf install ...` | `# apt-get install ...` | `# pacman -S ...` |
+| Python | 2.7.10 | 2.7.10 | 3.4.3 |
+| IPython Notebook | 2.4.1 | 2.3.0 | 3.2.1 |
 
 
 ## Git
@@ -51,7 +51,7 @@ nikdy nepřijdeš o svou bakalářku nebo diplomku pár dní před jejím
 odevzdáním. Takže si prosím otevři okno Terminálu a napiš do něj tento 
 příkaz
 
-	$ sudo yum install git
+	$ sudo dnf install git
 
 a zmáčkni `Enter`. Zadej svoje heslo pro ověření, že jsi to skutečně ty 
 a ani nemusíš zadržovat dech, je-li to pro tebe poprvé. Jest-li všechno 
@@ -86,13 +86,37 @@ zjisti verzi Pythonu, který máš nainstalovaný
 
 	$ python --version
 
-Hádám že to bude 2.7.x. Ten je totiž v tvém systému jako výchozí už 
-předinstalován. Ty jsi ale moderní astrofyzička a tak začneme rovnou s 
-aktuální verzí 3.4.x. Vše co pro začátek budeš potřebovat je
-[IPython Notebook](http://ipython.org/notebook.html). Ten nainstaluješ 
-včetně všech jeho závislostí jediným příkazem
+Hádám, že to bude 2.7.x, ten je totiž ve většině systémů jako výchozí 
+už předinstalován. Ty jsi ale moderní astrofyzička a tak začni rovnou 
+současnou verzí 3.4.x. Instalaci provedeš jediným příkazem
 
-	$ sudo yum install python3-ipython-notebook
+	$ sudo dnf install python3
 
-A je to! Pojďme se teď společně podívat, jaké mocné kouzla se s tvým 
-nadupaným notebookem dají dělat[...](NOTEBOOK.md)
+
+## Windows
+
+Nebudu ti tajit, že je možné vše potřebné nainstalovat přímo do tvých 
+Windows a to i na tabletu. Jen v případě, že se ocitneš v nesnázích si 
+budeš muset poradit sama.
+
+
+### Git Bash
+
+Stáhni si a nainstaluj Git z jeho stránek 
+<https://git-scm.com/download/win>. Spolu s ním získáš i Terminál, ve 
+kterém můžeš zadávat příkazy.
+
+
+### Anaconda
+
+Jako vhodnou distribuci Pythonu pro Windows ti můžu doporučit 
+[Minicondu](http://conda.pydata.org/miniconda.html). Jen si dej pozor, 
+aby jsi stáhla správnou verzi. IPython Notebook i další balíčky v ní 
+nainstaluješ zadáním příkazu
+
+	$ conda install ipython-notebook
+
+
+A je to! Ještě dřív než se pustíš do zkoušení všelijakých mocných 
+kouzel, které se s Pythonem dají dělat, připrav si virtuální prostředí, 
+aby jsi si ve svém systému udržela pořádek[...](VIRTUAL.md)
