@@ -1,0 +1,6 @@
+[submodule "notebooks/scientific-python-lectures"]
+	path = notebooks/scientific-python-lectures
+	url = https://github.com/jrjohansson/scientific-python-lectures.git
+[submodule "notebooks/astropy-tutorials"]
+	path = notebooks/astropy-tutorials
+	url = https://github.com/astropy/astropy-tutorials.git
