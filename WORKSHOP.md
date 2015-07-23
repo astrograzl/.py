@@ -72,10 +72,10 @@ a smazat i celý dočasný adresář
 	$ rmdir $TEMP
 
 A-ha! Co se stalo? Program `RMDIR` dokáže smazat jedině prázdný 
-adresář. Takže buď napřed smažeš všechny soubory v něm obsažené a pak i 
-jej samotný, nebo to celé uděláš najednou
+adresář. Takže napřed smaž i všechny zbývající soubory pomocí dotěrné 
+varienty příkazu
 
-	$ rm -r $TEMP
+	$ rm -i *
 	
 Až budeš potvrzovat, že ho chceš skutečně smazat, buď si tím naprosto 
 jistá. Žádná cesta zpátky už nevede.
