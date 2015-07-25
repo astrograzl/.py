@@ -1,2 +1,5 @@
-# ipython["notebook"]
+#!python3
+#ipython["notebook"]
+astropy
 qrcode
+pillow

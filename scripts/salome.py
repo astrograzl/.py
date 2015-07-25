@@ -20,7 +20,8 @@ def qrme(data):
 
 if __name__ == "__main__":
     qrme(url)
-    print("Přejít na «{}»?".format(url))
+    print("    Příručka moderní astrofyzičky\n")
+    print("Chceš si prohlédnout příručku online?\n«{}»".format(url))
     print("Ano nebo ne? ", end="")
     ans = input()
     if ans == "Ano":
