@@ -118,10 +118,10 @@ budeš hotova, můžeš provedené změny zkontrolovat příkazem
 
 	$ git diff
 
-Podle instrukcí v sekci Informace připrav příspěvek a odešli ho na 
-GitHub. Tam následně vytvoř požadavek na přetažení své větve do mého 
-repositáře. Jak na to jistě přijdeš hravě sama, jsi přece šikovná holka 
-;-)
+Podle instrukcí v sekci [_Informace_](#Informace) připrav příspěvek a 
+odešli ho na GitHub. Tam následně vytvoř požadavek na přetažení své 
+větve do mého repositáře. Jak na to jistě přijdeš hravě sama, jsi přece 
+šikovná holka ;-)
 
 Nyní se můžeš přepnout zpět do hlavní větve repositáře
 
