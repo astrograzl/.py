@@ -1,10 +1,48 @@
 # Virtuální prostředí
 
-Tato kapitola nebude o použití Pythoního modulu 
-[venv](https://docs.python.org/dev/library/venv.html). Koho více zajímá 
-samotné vytváření vlastních balíčků pro Python mohu v tuto chvíli 
-odkázat na jinou elektronickou příručku psanou v anglickém jazyce
-[PyGUG](https://packaging.python.org/).
+Při hraní si s více projekty najednou je dobré si udržet pořádek v 
+jejich závislostech na jednotlivých modulech. K tomuto účelu slouží 
+virtuální prostředí pro Python poskytované balíčkem 
+[Virtualenv](https://virtualenv.pypa.io/). Ten umožňuje vytvářet 
+vzájemně se neovlivňující izolované prostředí. Jeho nadstavba 
+[Virtualenvwrapper](https://virtualenvwrapper.readthedocs.org/) pak 
+ještě více zpříjemňuje práci s nimi. Proto si jej hned nainstaluj
+
+	$ sudo dnf install python-virtualenvwrapper
+	
+Prvotní konfigurace obnáší přidání tři řádek do tvého souboru 
+`~/.bashrc`. První nastaví proměnnou, která určuje, kde se nové 
+virtuální prostředí budou ukládat. Druhý řádek nastavuje proměnnou s 
+cestou k tvým projektům na Ploše. Třetí pak aktivuje samotný wrapper.
+
+	$ echo 'export WORKON_HOME=$HOME/.virtualenvs' >> ~/.bashrc
+	$ echo 'export PROJECT_HOME=$HOME/Plocha' >> ~/.bashrc
+	$ echo 'source /usr/bin/virtualenvwrapper.sh' >> ~/.bashrc
+
+Nejednoduší co teď můžeš udělat, aby se právě provedené změny 
+ihned projevily, je zavřít a znovu otevřít okno Terminálu.
+
+
+## Projekty
+
+Když budeš za projekt uvažovat adresář na Ploše a s ním spojené 
+virtuální prostředí, tak nový vytvoříš příkazem
+
+	$ mkproject Salome
+
+Všimni si změny promptu na `(Salome)$ `, ten značí, v kterém virtuálním 
+prostředí se právě nacházíš. Přepínat mezi nimi, nebo jen zobrazit 
+jejich seznam, můžeš příkazem
+
+	$ workon
+
+Až tě hraní si s ním omrzí, můžeš ho opustit příkazem
+
+	(Salome)$ deactivate
+
+a na dobro smazat
+
+	$ rmvirtualenv Salome
 
 
 ## PIP
@@ -17,24 +55,5 @@ pro instalaci balíčků používá následovně
 
 	$ pip install astropy
 
-
-## VirtualEnv
-
-Součástí distribuce Pythonu [*Anaconda*](INSTALL.md#Anaconda) je již 
-zabudovaná podpora správy virtuálních prostředí. Nové virtuální 
-prostředí s Pythonem pro účely bezpečného zkoušení příkazů v této 
-příručce vykouzlíš z terminálu zadáním příkazu
-
-	$ conda create -n Salome python
-
-následně ho můžeš aktivovat příkazem
-
-	$ source activate Salome
-
-Měla by jsi si všimnout změny promptu na `(Salome)$`, který značí, že 
-se nacházíš právě v tomto virtuálním prostředí. Až tě práce s ním 
-omrzí, můžeš ho lehce opustit příkazem
-
-	(Salome)$ source deactivate
 
 Nastal čas vyzkoušet schopnosti tvého notebooku[...](NOTEBOOK.md)
