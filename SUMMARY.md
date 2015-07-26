@@ -9,6 +9,7 @@
 * [Workshop](WORKSHOP.md)
 * [Python](PYTHON.md)
 * [GitHub](GITHUB.md)
+* [Expedice](EXPEDICE.md)
 * [Slovníček](GLOSSARY.md)
 * [Památník](MEMORIAL.md)
 * [O autorovi](AUTHOR.md)
