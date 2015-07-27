@@ -12,4 +12,5 @@
 * [Expedice](EXPEDICE.md)
 * [Slovníček](GLOSSARY.md)
 * [Památník](MEMORIAL.md)
+* [Manifest](MANIFEST.md)
 * [O autorovi](AUTHOR.md)
