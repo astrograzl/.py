@@ -1,23 +1,25 @@
 # Instalace
 
-Ačkoliv je tato příručka dostupná on-line, na adrese 
-<http://astrograzl.gitbooks.io/salome/>, je výhodné si stáhnout i její 
-zdrojové kódy z repositáře <https://github.com/astrograzl/salome/>. 
-Tím, kromě vlastní kopie, získáš i možnost zkoumat jak byla tvořena 
-či spouštět interaktivní tutoriály. Budeš mi moct posílat návrhy na 
-vylepšení i opravy chyb. Ale hlavně se tím i něco nového naučíš.
+Ačkoliv je tato příručka dostupná on-line v Internetu, na adrese 
+<https://astrograzl.gitbooks.io/salome/>, je výhodné si stáhnout i její 
+zdrojové kódy z repositáře <https://github.com/astrograzl/salome/>. Tím, 
+kromě vlastní kopie, získáš i možnost zkoumat jak byla tvořena či 
+spouštět interaktivní tutoriály k ní přibalené. Budeš mi moct posílat 
+návrhy na vylepšení či opravy chyb. Ale hlavně se tím i něco nového 
+naučíš.
 
 
 ## Stažení
 
-Repositáře se zdrojovým kódem získáš pomocí nástroje `GIT` zadáním 
+Repositář se zdrojovým kódem získáš pomocí nástroje `GIT` zadáním 
 následujícího příkazu do okna Terminálu
 
 	$ git clone https://github.com/astrograzl/Salome.git
 
-Že žádný Git nemáš a o nějakém Terminálu jsi v životě neslyšela vůbec 
-nevadí. Celá příručka je sice plná odborných termínů okolo počítačů, 
-ale než dojdeš ke slovníčku na konci, tak se s nimi ještě skamarádíš.
+Že žádný Git nemáš a o nějakém Terminálu jsi v životě ještě neslyšela 
+vůbec nevadí. Celá příručka je sice plná odborných termínů okolo 
+počítačů, ale než dojdeš ke slovníčku na konci, tak se s nimi jistě 
+stihneš skamarádit.
 
 
 ## Linux
@@ -37,10 +39,10 @@ Archu, který sám používám.
 
 | ? | Fedora (22) | Ubuntu (15.04) | Arch |
 |---|-------------|----------------|------| 
-| Balík | rpm |  deb | tar.xz |
+| Balíček | rpm |  deb | tar.xz |
 | Instalace | `# dnf install ...` | `# apt-get install ...` | `# pacman -S ...` |
 | Python | 2.7.10 | 2.7.10 | 3.4.3 |
-| IPython Notebook | 2.4.1 | 2.3.0 | 3.2.1 |
+| IPython Notebook | 2.4.1 | 2.3.0 | 4.0.0 |
 
 
 ## Git
@@ -86,36 +88,33 @@ zjisti verzi Pythonu, který máš nainstalovaný
 
 	$ python --version
 
-Hádám, že to bude 2.7.x, ten je totiž ve většině systémů jako výchozí 
-už předinstalován. Ty jsi ale moderní astrofyzička a tak začni rovnou 
-současnou verzí 3.4.x. Instalaci provedeš jediným příkazem
-
-	$ sudo dnf install python3
+Hádám, že to bude 2.7.x, ten je totiž ve většině systémů jako výchozí už 
+předinstalován, takže v tuto chvíli není třeba nic víc podnikat.
 
 
 ## Windows
 
-Nebudu ti tajit, že je možné vše potřebné nainstalovat přímo do tvých 
+Nebudu ti tajit, že je možné vše potřebné nainstalovat i přímo do tvých 
 Windows a to i na tabletu. Jen v případě, že se ocitneš v nesnázích si 
 budeš muset poradit sama.
 
 
 ### Git Bash
 
-Stáhni si a nainstaluj Git z jeho stránek 
-<https://git-scm.com/download/win>. Spolu s ním získáš i Terminál, ve 
-kterém můžeš zadávat příkazy.
+Stáhni si a nainstaluj Git z jeho webových stránek 
+<https://git-scm.com/download/win>. Spolu s ním získáš i barevný 
+Terminál, ve kterém můžeš zadávat příkazy podobně jako v Linuxu.
 
 
-### Anaconda
+### Miniconda
 
-Jako vhodnou distribuci Pythonu pro Windows ti můžu doporučit 
-[Minicondu](http://conda.pydata.org/miniconda.html). Jen si dej pozor, 
-aby jsi stáhla správnou verzi. IPython Notebook i další balíčky v ní 
-nainstaluješ zadáním příkazu
+Jako vhodnou distribuci Pythonu nejen pro Windows ti mohu doporučit 
+[Minicondu](http://conda.pydata.org/miniconda.html). Jen si dej dobrý 
+pozor, aby jsi stáhla správnou verzi (Python 3.4, 64-bit). IPython 
+Notebook a případně i další balíčky v ní nainstaluješ zadáním příkazu do 
+okna Terminálů, který najdeš v menu pod názvem *Git Bash*
 
 	$ conda install ipython-notebook
-
 
 A je to! Ještě dřív než se pustíš do zkoušení všelijakých mocných 
 kouzel, které se s Pythonem dají dělat, připrav si virtuální prostředí, 

@@ -13,7 +13,7 @@ Internet. A ty všechny rozumí jazyku Python.
 
 Aby byl osobní počítač ideálním pomocníkem, musí ti poskytovat dostatek 
 komfortu. Tablet je sice pěkná hračka, ale uznej sama, že komunikovat s 
-počítačem pomocí 104 kláves všemi deseti je přinejmenším desetkrát 
+počítačem pomocí 104 kláves všemi deseti prsty je přinejmenším desetkrát 
 rychlejší, než jedním prstem klikat na barevné obrázky. Notebook jako 
 klávesnice spojená s monitorem v kompaktním a hlavně přenosném 
 provedení se mě osobně jeví jako rozumné řešení dostatečně výkonné 
@@ -22,7 +22,7 @@ pracovní stanice.
 
 ## IPython Notebook
 
-Tutoriály připojené k této příručce se nacházejí v adresáři `notebooks` 
+Tutoriály přibalené k této příručce se nacházejí v adresáři `notebooks` 
 uvnitř adresáře `Salome`, který vznikl, když sis příručku klonovala z 
 GitHubu. Takže račte do ní vstoupit madam
 

@@ -15,8 +15,8 @@ Prvotní konfigurace obnáší přidání tři řádek do tvého souboru
 virtuální prostředí budou ukládat. Druhý řádek nastavuje proměnnou s 
 cestou k tvým projektům na Ploše. Třetí pak aktivuje samotný wrapper.
 
-	$ echo 'export WORKON_HOME=$HOME/.virtualenvs' >> ~/.bashrc
-	$ echo 'export PROJECT_HOME=$HOME/Plocha' >> ~/.bashrc
+	$ echo 'export WORKON_HOME=$HOME/.virtualenvs/' >> ~/.bashrc
+	$ echo 'export PROJECT_HOME=$HOME/Plocha/' >> ~/.bashrc
 	$ echo 'source /usr/bin/virtualenvwrapper.sh' >> ~/.bashrc
 
 Nejednoduší co teď můžeš udělat, aby se právě provedené změny 
@@ -40,7 +40,8 @@ Až tě hraní si s ním omrzí, můžeš ho opustit příkazem
 
 	(Salome)$ deactivate
 
-a na dobro smazat
+a na dobro smazat, pokud jsi si jista, že už jej víckát nebudeš 
+potřebovat
 
 	$ rmvirtualenv Salome
 
@@ -53,7 +54,7 @@ Doporučenou cestou autorit vývojářské komunity je použití nástroje
 pokud máš dostatečně aktuální verzi Pythonu ve své distribuci. Pip se 
 pro instalaci balíčků používá následovně
 
-	$ pip install astropy
+	(Salome)$ pip install astropy
 
 
 Nastal čas vyzkoušet schopnosti tvého notebooku[...](NOTEBOOK.md)
