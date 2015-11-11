@@ -7,6 +7,7 @@
 * [Terminál](TERMINAL.md)
 * [Linux](LINUX.md)
 * [Workshop](WORKSHOP.md)
+* [Munipack](MUNIPACK.md)
 * [Python](PYTHON.md)
 * [GitHub](GITHUB.md)
 * [Expedice](EXPEDICE.md)

@@ -1,0 +1,169 @@
+*******************************************************************************
+JPL/HORIZONS                PANSTARRS (C/2013 X1)          2015-Nov-10 12:10:49
+Rec #:904012 (+COV)   Soln.date: 2015-Oct-28_15:46:27    # obs: 892 (2013-2015)
+ 
+FK5/J2000.0 helio. ecliptic osc. elements (au, days, deg., period=Julian yrs): 
+ 
+  EPOCH=  2457104.5 ! 2015-Mar-23.0000000 (TDB)    RMSW= n.a.                  
+   EC= 1.000857770373469   QR= 1.31422334588816    TP= 2457499.2617047373      
+   OM= 130.9508779105823   W= 164.4641230753722    IN= 163.2307343552763       
+   A= -1532.138887676104   MA= -.0064877168333481  ADIST= 9.999999E99          
+   PER= 9.999999E99        N= 1.6435E-5            ANGMOM= .027894857          
+   DAN= 73.63563000000001  DDN= 1.33869            L= 325.8560947              
+   B= 4.4320747            MOID= .30835199         TP= 2016-Apr-20.7617047373  
+ 
+Comet physical (GM= km^3/s^2; RAD= km):                                        
+   GM= n.a.                RAD= n.a.                                           
+   M1=  5.6      M2=  10.1     k1=  10.    k2=  5.      PHCOF=  .030           
+ 
+COMET comments 
+1: soln ref.= JPL#42, data arc: 2013-11-29 to 2015-10-23
+2: k1=10., k2=5., phase coef.=0.03;
+*******************************************************************************
+ 
+ 
+*******************************************************************************
+Ephemeris / WWW_USER Tue Nov 10 12:10:50 2015 Pasadena, USA      / Horizons    
+*******************************************************************************
+Target body name: PANSTARRS (C/2013 X1)           {source: JPL#42}
+Center body name: Earth (399)                     {source: DE-0431LE-0431}
+Center-site name: GEOCENTRIC
+*******************************************************************************
+Start time      : A.D. 2015-Nov-04 17:45:00.0000 UT      
+Stop  time      : A.D. 2015-Nov-04 18:00:00.0000 UT      
+Step-size       : 1 minutes
+*******************************************************************************
+Target pole/equ : No model available
+Target radii    : (unavailable)                                                
+Center geodetic : 0.00000000,0.00000000,0.0000000 {E-lon(deg),Lat(deg),Alt(km)}
+Center cylindric: 0.00000000,0.00000000,0.0000000 {E-lon(deg),Dxy(km),Dz(km)}
+Center pole/equ : High-precision EOP model        {East-longitude +}
+Center radii    : 6378.1 x 6378.1 x 6356.8 km     {Equator, meridian, pole}    
+Target primary  : Sun
+Vis. interferer : MOON (R_eq= 1737.400) km        {source: DE-0431LE-0431}
+Rel. light bend : Sun, EARTH                      {source: DE-0431LE-0431}
+Rel. lght bnd GM: 1.3271E+11, 3.9860E+05 km^3/s^2                              
+Small-body perts: Yes                             {source: SB431-BIG16}
+Atmos refraction: NO (AIRLESS)
+RA format       : HMS
+Time format     : CAL 
+EOP file        : eop.151109.p160131                                           
+EOP coverage    : DATA-BASED 1962-JAN-20 TO 2015-NOV-09. PREDICTS-> 2016-JAN-30
+Units conversion: 1 au= 149597870.700 km, c= 299792.458 km/s, 1 day= 86400.0 s 
+Table cut-offs 1: Elevation (-90.0deg=NO ),Airmass (>38.000=NO), Daylight (NO )
+Table cut-offs 2: Solar Elongation (  0.0,180.0=NO ),Local Hour Angle( 0.0=NO )
+*******************************************************************************
+Initial FK5/J2000.0 heliocentric ecliptic osculating elements (au, days, deg.):
+  EPOCH=  2457104.5 ! 2015-Mar-23.0000000 (TDB)    RMSW= n.a.                  
+   EC= 1.000857770373469   QR= 1.31422334588816    TP= 2457499.2617047373      
+   OM= 130.9508779105823   W= 164.4641230753722    IN= 163.2307343552763       
+Comet physical (GM= km^3/s^2; RAD= km):                                        
+   GM= n.a.                RAD= n.a.                                           
+   M1=  5.6      M2=  10.1     k1=  10.    k2=  5.      PHCOF=  .030           
+**************************************************************************************************************
+ Date__(UT)__HR:MN     R.A._(ICRF/J2000.0)_DEC  T-mag  N-mag            delta      deldot    S-O-T /r    S-T-O
+**************************************************************************************************************
+$$SOE
+ 2015-Nov-04 17:45     04 00 48.64 +45 31 34.2  11.11  13.85 1.78508927457978 -32.0541532 145.1043 /L  12.3152
+ 2015-Nov-04 17:46     04 00 48.44 +45 31 34.2  11.11  13.85 1.78507641770777 -32.0534842 145.1051 /L  12.3150
+ 2015-Nov-04 17:47     04 00 48.25 +45 31 34.3  11.11  13.85 1.78506356110407 -32.0528153 145.1059 /L  12.3148
+ 2015-Nov-04 17:48     04 00 48.06 +45 31 34.3  11.11  13.85 1.78505070476870 -32.0521463 145.1067 /L  12.3146
+ 2015-Nov-04 17:49     04 00 47.87 +45 31 34.4  11.11  13.85 1.78503784870167 -32.0514773 145.1075 /L  12.3143
+ 2015-Nov-04 17:50     04 00 47.68 +45 31 34.4  11.11  13.85 1.78502499290297 -32.0508083 145.1084 /L  12.3141
+ 2015-Nov-04 17:51     04 00 47.49 +45 31 34.5  11.11  13.85 1.78501213737261 -32.0501393 145.1092 /L  12.3139
+ 2015-Nov-04 17:52     04 00 47.30 +45 31 34.5  11.11  13.85 1.78499928211061 -32.0494703 145.1100 /L  12.3137
+ 2015-Nov-04 17:53     04 00 47.11 +45 31 34.6  11.11  13.85 1.78498642711696 -32.0488012 145.1108 /L  12.3135
+ 2015-Nov-04 17:54     04 00 46.92 +45 31 34.7  11.11  13.85 1.78497357239168 -32.0481322 145.1116 /L  12.3132
+ 2015-Nov-04 17:55     04 00 46.73 +45 31 34.7  11.11  13.85 1.78496071793477 -32.0474631 145.1124 /L  12.3130
+ 2015-Nov-04 17:56     04 00 46.53 +45 31 34.8  11.11  13.85 1.78494786374623 -32.0467940 145.1132 /L  12.3128
+ 2015-Nov-04 17:57     04 00 46.34 +45 31 34.8  11.11  13.85 1.78493500982605 -32.0461249 145.1140 /L  12.3126
+ 2015-Nov-04 17:58     04 00 46.15 +45 31 34.9  11.11  13.85 1.78492215617428 -32.0454558 145.1148 /L  12.3124
+ 2015-Nov-04 17:59     04 00 45.96 +45 31 34.9  11.11  13.85 1.78490930279089 -32.0447867 145.1156 /L  12.3121
+ 2015-Nov-04 18:00     04 00 45.77 +45 31 35.0  11.11  13.85 1.78489644967590 -32.0441175 145.1164 /L  12.3119
+$$EOE
+**************************************************************************************************************
+Column meaning:
+ 
+TIME
+
+  Prior to 1962, times are UT1. Dates thereafter are UTC. Any 'b' symbol in
+the 1st-column denotes a B.C. date. First-column blank (" ") denotes an A.D.
+date. Calendar dates prior to 1582-Oct-15 are in the Julian calendar system.
+Later calendar dates are in the Gregorian system.
+
+  Time tags refer to the same instant throughout the universe, regardless of
+where the observer is located.
+
+  The dynamical Coordinate Time scale is used internally. It is equivalent to
+the current IAU definition of "TDB". Conversion between CT and the selected
+non-uniform UT output scale has not been determined for UTC times after the
+next July or January 1st.  The last known leap-second is used over any future
+interval.
+
+  NOTE: "n.a." in output means quantity "not available" at the print-time.
+ 
+ R.A._(ICRF/J2000.0)_DEC =
+   J2000.0 astrometric right ascension and declination of target center.
+Adjusted for light-time. Units: HMS (HH MM SS.ff) and DMS (DD MM SS.f)
+ 
+ T-mag N-mag =
+   Comet's approximate apparent visual total magnitude ("T-mag") and nuclear
+magnitude ("N-mag") by following standard IAU definitions:
+    T-mag =  M1 + 5*log10(delta) + k1*log10(r)
+    N-mag =  M2 + 5*log10(delta) + k2*log10(r) + phcof*beta
+   Units: MAGNITUDES
+ 
+ delta  deldot =
+   Range ("delta") and range-rate ("delta-dot") of target center with respect
+to the observer at the instant light seen by the observer at print-time would
+have left the target center (print-time minus down-leg light-time); the
+distance traveled by a light ray emanating from the center of the target and
+recorded by the observer at print-time. "deldot" is a projection of the
+velocity vector along this ray, the light-time-corrected line-of-sight from the
+coordinate center, and indicates relative motion. A positive "deldot" means the
+target center is moving away from the observer (coordinate center). A negative
+"deldot" means the target center is moving toward the observer.
+Units: AU and KM/S
+ 
+ S-O-T /r =
+    Sun-Observer-Target angle; target's apparent solar elongation seen from
+observer location at print-time. If negative, the target center is behind
+the Sun. Angular units: DEGREES.
+
+    The '/r' column indicates target apparent position relative to the Sun
+in the observer's sky, as described below:
+
+    For an observing location on the surface of a rotating body:
+
+         /T indicates target trails Sun (evening sky)
+         /L indicates target leads Sun  (morning sky)
+
+    For an observing point not on a rotating body (such as a spacecraft):
+
+         /T indicates target trails Sun (RA_target - RA_sun < 0, 'west of Sun')
+         /L indicates target leads Sun  (RA_target - RA_sun > 0, 'east of Sun')
+
+NOTE: The S-O-T solar elongation angle is the minimum separation angle of the
+Sun and target in any direction. It does not indicate the separation in the
+leading or trailing directions.
+
+ 
+ S-T-O =
+   "S-T-O" is the Sun->Target->Observer angle; the interior vertex angle at
+target center formed by a vector to the apparent center of the Sun at
+reflection time on the target and the apparent vector to the observer at
+print-time. Slightly different from true PHASE ANGLE (requestable separately)
+at the few arcsecond level in that it includes stellar aberration on the
+down-leg from target to observer.  Units: DEGREES
+
+
+ Computations by ...
+     Solar System Dynamics Group, Horizons On-Line Ephemeris System
+     4800 Oak Grove Drive, Jet Propulsion Laboratory
+     Pasadena, CA  91109   USA
+     Information: http://ssd.jpl.nasa.gov/
+     Connect    : telnet://ssd.jpl.nasa.gov:6775  (via browser)
+                  telnet ssd.jpl.nasa.gov 6775    (via command-line)
+     Author     : Jon.Giorgini@jpl.nasa.gov
+
+**************************************************************************************************************
