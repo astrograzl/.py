@@ -1,5 +1,7 @@
 #!python3
+#virtualenvwrapper
 #ipython["notebook"]
+jupyter
 astropy
 qrcode
 pillow
