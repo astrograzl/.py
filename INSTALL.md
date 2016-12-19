@@ -38,10 +38,10 @@ Proto zde uvádím tabulku srovnávající aktuální verzi Fedory, Ubuntu a
 Archu, který sám používám.
 
 | ? | Fedora | Ubuntu | Arch |
-|---|-------------|----------------|------|
+|---|--------|--------|------|
 | Balíček | rpm |  deb | tar.xz |
 | Instalace | `# dnf install ...` | `# apt-get install ...` | `# pacman -S ...` |
-| Python | 2.7.12 | 2.7.11 | 3.5.2 |
+| Python | 2.7.12 | 3.5.1 | 3.5.2 |
 | Notebook | 3.2.1 | 4.2.3 | 4.3.0 |
 
 
