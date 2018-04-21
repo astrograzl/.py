@@ -5,7 +5,7 @@ Ačkoliv je tato příručka dostupná on-line v Internetu, na adrese
 zdrojové kódy z repositáře <https://github.com/astrograzl/salome/>. Tím,
 kromě vlastní kopie, získáš i možnost zkoumat jak byla tvořena či
 spouštět interaktivní tutoriály k ní přibalené. Budeš mi moct posílat
-návrhy na vylepšení či opravy chyb. Ale hlavně se tím i něco nového
+návrhy na vylepšení či opravy chyb. A třeba se tím i něco nového
 naučíš.
 
 
@@ -31,18 +31,9 @@ se bát nemusíš.
 
 ![Fedora](screenshots/fedora.png)
 
-Vidím, že jsi si vybrala [Fedoru](https://getfedora.org). Za to tě mohu
-jedině pochválit, neboť modrá ti sluší. V jiné distribuci bude příkaz
-pro instalaci programů rozdílný i názvy a verze balíčků se mohou lišit.
-Proto zde uvádím tabulku srovnávající aktuální verzi Fedory, Ubuntu a
-Archu, který sám používám.
-
-| ? | Fedora | Ubuntu | Arch |
-|---|--------|--------|------|
-| Balíček | rpm |  deb | tar.xz |
-| Instalace | `# dnf install ...` | `# apt-get install ...` | `# pacman -S ...` |
-| Python | 2.7.12 | 3.5.1 | 3.5.2 |
-| Notebook | 3.2.1 | 4.2.3 | 4.3.0 |
+Na výběr máš z mnoha možností, nad kterými se můžeš rozmýšlet klidně celý týden
+a občas je i jen tak pro zábavu střídat: Debian, Ubuntu, Fedora, Mint, OpenSUSE
+a mnoho dalších. Já sám používám Arch. Základ je víceméně stejný a obsažené programy se budou lišit nanejvíš aktuální verzí. Těch pár drobností, které je odlišují, třeba jak se instalují nové programy hravě zvládneš za večer nastudovat z wiki stránek.
 
 
 ## Git
@@ -50,14 +41,9 @@ Archu, který sám používám.
 Distribuovaný systém správy verzí [Git](https://git-scm.org) slouží k
 ukládání a sdílení zdrojového kódu, včetně historie jeho změn. S Gitem
 nikdy nepřijdeš o svou bakalářku nebo diplomku pár dní před jejím
-odevzdáním. Takže si prosím otevři okno Terminálu a napiš do něj tento
-příkaz
-
-	$ sudo dnf install git
-
-a zmáčkni `Enter`. Zadej svoje heslo pro ověření, že jsi to skutečně ty
-a ani nemusíš zadržovat dech, je-li to pro tebe poprvé. Jest-li všechno
-dobře dopadlo, se můžeš ihned přesvědčit následujícím příkazem
+odevzdáním. Takže si prosím otevři okno Terminálu nebo nějakého správce software
+a nainstaluj sis jej způsobem, který ti ve tvé vyvolené distribuci nejvíce vyhovuje.
+Jest-li všechno dobře dopadlo, se můžeš ihned přesvědčit následujícím příkazem
 
 	$ git tip
 
@@ -110,7 +96,7 @@ Terminál, ve kterém můžeš zadávat příkazy podobně jako v Linuxu.
 
 Jako vhodnou distribuci Pythonu nejen pro Windows ti mohu doporučit
 [Minicondu](http://conda.pydata.org/miniconda.html). Jen si dej dobrý
-pozor, aby jsi stáhla správnou verzi (Python 3.5, 64-bit). IPython
+pozor, aby jsi stáhla správnou verzi (Python 3.6, 64-bit). IPython
 Notebook a případně i další balíčky v ní nainstaluješ zadáním příkazu do
 okna Terminálů, který najdeš v menu pod názvem *Git Bash*
 

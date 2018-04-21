@@ -47,11 +47,11 @@ je uložen v proměnné prostředí `PS1`. Ostatně zkus si ji vypsat sama
 
 ![prompt](screenshots/prompt.png)
 
-Normálně nebývá tak dlouhý jako můj, ale na druhou stranu mi tak 
-poskytuje dostatek informací.
+Chápej ho jako kouzelný proutek, který neprodleně vykoná příkazy tebou zapsané
+a navíc umí i ukazovat zajímavé informace včetně aktuálního času, případně všeho,
+co si nastavíš a v jakých barvách,... nekonče předpovědí počasí. U mě jsou to spíše věci technického charakteru:
 
-* V kulatých `(...)` závorkách název Pythoního virtuálního 
-prostředí
+* V kulatých `(...)` závorkách název Pythoního virtuálního prostředí
 * Ve složených `{...}` závorkách aktuální větev v Gitu
 * V hranatých `[...]` závorkách jméno uživatele @ počítače
 

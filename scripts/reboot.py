@@ -1,5 +1,5 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+#!python
+# coding: utf-8
 """# Reboot
 
 Klap, klap -- klape déšť na parapet.
@@ -12,7 +12,7 @@ Blik, blik -- blikají lampy za oknem.
 Zelený kurzor v okně s telnetem.
 """
 
-from __future__ import print_function, unicode_literals
 
-if __name__ == "__main__":
-    print("".join([bin(byte) for byte in bytearray(__doc__, "utf-8")]))
+for byte in bytearray(__doc__, 'utf-8'):
+    print(bin(byte), end="")
+print(".")

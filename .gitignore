@@ -1,5 +1,10 @@
 # Tento soubor slouží pro interní potřeby při vývoji v GITu.
 
+bin/
+lib/
+include/
+data/
+site/
 _book/
 node_modules/
 
@@ -7,7 +12,9 @@ node_modules/
 __pycache__/
 .ipynb_checkpoints/
 
-
                      mňau
     mňau  >(^._.^)<
              mňau
+
+pip-selfcheck.json
+.gitignore
