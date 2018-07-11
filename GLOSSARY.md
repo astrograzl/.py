@@ -34,3 +34,7 @@ ho jednou zkusíš, už nebudeš chtít psát v ničem jiném.
 # UTF-8
 Neboli unicode je způsob kódovaní znaků do binární podoby. To jediné 
 správné kódování, které by jsi měla používat.
+
+# Wiki
+
+Wikipedia, nebo-li otevřená kolektivní encyklopedie, plná hypertextových odkazů a obrázků usnadňující orientaci v nepřeberném množství informací svobodně dostupných zdarma na Internetu v pohodlně konvertibilním formátu.

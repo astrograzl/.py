@@ -5,13 +5,13 @@
 > [Zdeněk Janák](http://janak.astronomie.cz/)
 > «janak@astronomie.cz»
 
-Astrofyzika je od nepaměti vnímána v očích veřejnosti jako magická 
-věda. Aby si tento mystický obraz zachovala i v dnešní technologické 
-době, je třeba se stále učit novým kouzlům.
+Aby si astrofyzika udržela svůj obraz magické až mystické vědy i v dnešním
+přetechnizovaném 21. století, je třeba se stále učiti novým kouzlům.
 
 ```python
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+#!python3
+# coding: utf-8
+# @uthor: janak
 """Můj první skript ;-)"""
 
 if __name__ == "__main__":
@@ -19,8 +19,8 @@ if __name__ == "__main__":
 ```
 
 V této příručce se dozvíš, jak ovládnout jazyk, jímž si podmaníš 
-počítač, tak aby poslušně a bez odmlouvání vykonal každé tvoje přání. 
-Jazyk, který se omezuje jen na několik základních anglických slovíček:
+počítač, tak aby poslušně a bez odmlouvání vykonal každé tvé přání. 
+Jazykem, který se omezuje jen na několik prostých anglických slovíček:
 
 ```python
 and       del       from      not       while

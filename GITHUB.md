@@ -61,7 +61,7 @@ příkazu, se otevře textový editor, který sis zvolila v nastavení Gitu
 	$ git commit
 
 Do něj popiš jaké změny jsi provedla tak, aby jim rozumělo i tvé 
-budoucí *já*, které ho bude číst. Po ukončení editoru (nezapomeň soubor 
+budoucí *ty*, které ho bude číst. Po ukončení editoru (nezapomeň soubor 
 uložit), můžeš svůj příspěvek odeslat do repositáře na GitHubu
 
 	$ git push
@@ -138,5 +138,4 @@ klidným svědomím smazat
 
 	$ git branch --delete $(whoami)
 
-V této příručce zůstaneš už navěky zapsaná jako moderní 
-astrofyzička[...](MEMORIAL.md)
+V této příručce zůstaneš už navěky zapsaná jako moderní astrofyzička[...](MEMORIAL.md)

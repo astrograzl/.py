@@ -72,12 +72,12 @@ Tou nejzajímavější pro tebe je bezpochyby
 Dalšími, které můžeš shledat užitečnými, jsou knihovny standardně 
 používané pro vědecké výpočty a prezentaci jejich výsledků
 
-* [NumPy](http://numpy.org/) pro výpočty s vektory a maticemi
-* [SciPy](http://scipy.org/) obsahující nejrůznější vědecké funkce
-* [Matplotlib](http://matplotlib.org/) pro kreslení grafů
-* [SymPy](http://sympy.org/) pro symbolické výpočty
-* [Pandas](http://pandas.úydata.org/) pro pohodlnou manipulaci s 
-komplexními daty
+* [NumPy](http://numpy.org/) výpočty s vektory a maticemi
+* [SciPy](http://scipy.org/) nejrůznější vědecké funkce
+* [SymPy](http://sympy.org/) symbolické počty a operace
+* [Seaborn](https://seaborn.pydata.org/) vizualizace statistik
+* [Matplotlib](http://matplotlib.org/) kreslení nejrůznějších grafů
+* [Pandas](http://pandas.úydata.org/) pohodlná manipulaci s komplexními daty
 
 V mnoha skriptech se můžeš na prvních řádcích shledat s jejich použitím 
 následujícím způsobem
@@ -86,6 +86,7 @@ následujícím způsobem
 import numpy as np
 import scipy as sp
 import pandas as pd
+import seaborn as sns
 from matplotlib import pyplot as plt
 ```
 
@@ -134,7 +135,7 @@ Například změnit první písmeno na velké
 ```
 
 Seznam všech metod, které jsou pro daný objekt k dispozici ti napoví 
-našeptávač v IPython shellu nebo notebooku. Prostě po napsání jména 
+našeptávač v Jupyter konzoli nebo notebooku. Prostě po napsání jména 
 objektu a tečky `.`, která se používá jako oddělovač metod, zmáčkni 
 klávesu `Tab` a uvidíš
 

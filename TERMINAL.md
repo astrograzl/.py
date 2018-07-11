@@ -18,7 +18,7 @@ straně linky nesedí člověk, ale naslouchá stroj.
 
 Terminál jako takový je v podstatě jen kontejner pro další programy. 
 První se kterým přijdeš do kontaktu je takzvaný shell. V Linuxu 
-konkrétně `BASH`. To on interpretuje příkazy, které mu zadáváš, 
+konkrétně `BASH(1)`. To on interpretuje příkazy, které mu zadáváš, 
 případně spouští další programy podle potřeby. Ovládání počítače pomocí 
 shellu je už pokročilou magií. Není činnost na počítači, která by nešla 
 vykonat v shellu.
@@ -49,7 +49,7 @@ je uložen v proměnné prostředí `PS1`. Ostatně zkus si ji vypsat sama
 
 Chápej ho jako kouzelný proutek, který neprodleně vykoná příkazy tebou zapsané
 a navíc umí i ukazovat zajímavé informace včetně aktuálního času, případně všeho,
-co si nastavíš a v jakých barvách,... nekonče předpovědí počasí. U mě jsou to spíše věci technického charakteru:
+co si nastavíš a v jakých chceš barvách a tak dále nekonče předpovědí počasí. U mě jsou to spíše věci technického charakteru:
 
 * V kulatých `(...)` závorkách název Pythoního virtuálního prostředí
 * Ve složených `{...}` závorkách aktuální větev v Gitu
@@ -64,7 +64,7 @@ Terminálu a interagující s uživatelem má svůj vlastní prompt.
 |----------|-------------|--------|
 | Bash     | `$`         | `>`    |
 | Python   | `>>>`       | `...`  |
-| IPython  | `In [#]:`   | `...:` |
+| Jupyter  | `In [#]:`   | `...:` |
 | Gnuplot  | `gnuplot>`  |        |
 | Octave   | `octave:#>` | `>`    |
 
@@ -81,7 +81,7 @@ ohromná výhoda, protože příště je nemusíš znovu celé vypisovat. Pomoc�
 Pak už stačí jen do Terminálu napsat magický povel
 
 	$ !###
-	
+
 přičemž znaky `###` nahradíš číslem ze začátku řádku ve výpisu 
 historie, který by jsi chtěla provést znovu.
 

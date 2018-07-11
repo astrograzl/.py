@@ -12,7 +12,7 @@ naučíš.
 ## Stažení
 
 Repositář se zdrojovým kódem získáš pomocí nástroje `GIT` zadáním
-následujícího příkazu do okna Terminálu
+následujícího příkazu do okna *Terminálu*
 
 	$ git clone https://github.com/astrograzl/Salome.git
 
@@ -29,11 +29,11 @@ systém na svůj osobní počítač nainstalovat Linux. Pokud si na to sama
 netroufáš, najdi si mě o přestávce v kabinetě. O Windows ani svoje data
 se bát nemusíš.
 
-![Fedora](screenshots/fedora.png)
+![Slax](screenshots/slax.png)
 
 Na výběr máš z mnoha možností, nad kterými se můžeš rozmýšlet klidně celý týden
-a občas je i jen tak pro zábavu střídat: Debian, Ubuntu, Fedora, Mint, OpenSUSE
-a mnoho dalších. Já sám používám Arch. Základ je víceméně stejný a obsažené programy se budou lišit nanejvíš aktuální verzí. Těch pár drobností, které je odlišují, třeba jak se instalují nové programy hravě zvládneš za večer nastudovat z wiki stránek.
+a občas je i jen tak z rozmaru střídat: Debian, Ubuntu, Fedora, Mint, OpenSUSE
+a mnoho dalších. Já sám používám Arch. Základ je víceméně stejný a obsažené programy se budou lišit nanejvýš aktuální verzí. Těch pár drobností, které je odlišují, třeba jak se instalují nové programy hravě zvládneš sama za večer nastudovat z wiki stránek.
 
 
 ## Git
@@ -42,7 +42,7 @@ Distribuovaný systém správy verzí [Git](https://git-scm.org) slouží k
 ukládání a sdílení zdrojového kódu, včetně historie jeho změn. S Gitem
 nikdy nepřijdeš o svou bakalářku nebo diplomku pár dní před jejím
 odevzdáním. Takže si prosím otevři okno Terminálu nebo nějakého správce software
-a nainstaluj sis jej způsobem, který ti ve tvé vyvolené distribuci nejvíce vyhovuje.
+a nainstaluj si jej způsobem, který ti ve tvé vyvolené distribuci nejvíce vyhovuje.
 Jest-li všechno dobře dopadlo, se můžeš ihned přesvědčit následujícím příkazem
 
 	$ git tip
@@ -96,11 +96,11 @@ Terminál, ve kterém můžeš zadávat příkazy podobně jako v Linuxu.
 
 Jako vhodnou distribuci Pythonu nejen pro Windows ti mohu doporučit
 [Minicondu](http://conda.pydata.org/miniconda.html). Jen si dej dobrý
-pozor, aby jsi stáhla správnou verzi (Python 3.6, 64-bit). IPython
+pozor, aby jsi stáhla správnou verzi (Python 3.6, 64-bit). Jupyter
 Notebook a případně i další balíčky v ní nainstaluješ zadáním příkazu do
 okna Terminálů, který najdeš v menu pod názvem *Git Bash*
 
-	$ conda install jupyter
+	$ conda install jupyter seaborn
 
 A je to! Ještě dřív než se pustíš do zkoušení všelijakých mocných
 kouzel, které se s Pythonem dají dělat, připrav si virtuální prostředí,

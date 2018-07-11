@@ -15,18 +15,18 @@ několik základních příkazů.
 
 Příkaz se skládá z názvu programu, za kterým mohou následovat přepínače 
 ovlivňující jeho chování a parametry, jako například jména souborů, 
-které má program pro tebe zpracovat. Přepínače programu mívají 
+které má program pro tebe zpracovat. Přepínače programů mívají 
 zpravidla dvě varianty a mohou mít i vlastní parametry.
 
-* Krátká varianta přepínače uvozena jednou pomlčkou je tvořena jen 
-jedním písmenem. Parametry se od nich oddělují mezerou. Více krátkých 
+* Krátká varianta přepínače uvozena jednou pomlčkou je tvořena zpavidla
+jen jedním písmenem. Parametry se od nich oddělují mezerou. Více krátkých 
 přepínačů bez parametrů můžeš spojit dohromady, a když chceš být 
 extrémně líná, můžeš někdy vynechat i tu pomlčku a ušetřit si tak pár 
 úhozů na klávesnici.
 
 * Dlouhá varianta přepínače uvozena dvěma pomlčkami je srozumitelnější 
 a tak i vhodnější pro použití ve skriptech. Případné parametry se k 
-němu připojují pomoci znaku rovnáse `=`.
+němu připojují pomoci znaku rovnítko `=`.
 
 * Speciální přepínač `--` ukončuje část příkazu s přepínači a značí, že 
 za ním následují už jenom parametry pro samotný program.
@@ -49,14 +49,13 @@ jednotlivým programům
 	$ man python
 
 Prohlížeč manuálových stránek ukončíš stiskem klávesy `q` a nápovědu k 
-němu získáš klávesou `h`. Struktůra manualových stránek je 
+němu získáš klávesou `h`. Struktura manuálových stránek je 
 popsána v manuálové stránce k programu MAN(1). Když nevíš kterou 
 konkrétní zobrazit, můžeš vyhledat všechny na dané téma
 
 	$ apropos python
 
-Pokud tě jenom zajímá co daný program dělá, není nic snazšího než 
-zkusit
+Pokud tě jenom zajímá co daný program dělá, není nic snazšího než zkusit
 
 	$ whatis python
 
@@ -76,9 +75,9 @@ opakovaně stisknout kombinaci kláves `Ctrl+C` a tím jeho běh ukončit.
 Pro sledování využití prostředků počítače, slouží program `TOP`.
 
 	$ top
-    
+
 Úlohy se v něm dají řadit podle vytížení procesoru klávesovou zkratkou 
-`Shift+P` nebo podle množství zkonzumované paměti pomoci `Shift+M`. 
+`Shift+P` nebo podle množství konzumované paměti pomoci `Shift+M`. 
 Ukončuje se klávesou `q` a nápověda se zobrazí po stisknutí `h`.
 
 Občas se může stát, že se některý program prostě zblázní a přestane 
@@ -87,10 +86,10 @@ cvičně takovou situaci nasimulovat. Začni tím, že v Terminálu spustíš
 program `YES`, který neděla nic jiného, než pořád dokola vypisuje 
 text, který mu předáš jako parametr.
 
-	$ yes "All work and no play makes Jack a dull boy"	
-	
+	$ yes "All work and no play makes Jack a dull boy"
+
 Použitím klávesové zkratky `Ctrl+Z` jeho běh pozastavíš. Podívej se na 
-výpis všech svých spuštěných programů, ten získaš pomocí příkazu
+výpis všech svých spuštěných programů, ten získáš pomocí příkazu
 
 	$ ps x
 
@@ -99,7 +98,7 @@ klid a nepropadej panice! Nezbedný program ukončíš tak, že mu zašleš
 speciální signál
 
 	$ kill -9 ####
-	
+
 Za znaky `####` dosaď správný PID, tedy to číslo z prvního sloupce, ale 
 dej si dobrý pozor, aby jsi ho opsala ze správného řádku. Jistější 
 přeci jen bude ho zkopírovat a vložit.
@@ -122,28 +121,28 @@ Stejně tak i výstup programu můžeš přesměrovat do souboru
 Chybový výstup můžeš buď přesměrovat zvlášť pomocí `2>` nebo můžeš oba 
 výstupy přesměrovat najednou použitím `&>`. Pokud se má výstup jednoho 
 programu stát zároveň i vstupem pro druhý program, použij takzvanou 
-roupu, neboli PIPE
+roupu, neboli `PIPE(7)`
 
 	$ program1 | program2
 
 Chceš-li použít standardní vstup nebo výstup v místě, kde program 
 očekává název souboru, napiš místo něj pomlčku `-`. Pokud budeš chtít, 
 aby program zapisoval zároveň na standardní výstup i do souboru, použij 
-program `TEE`.
+program `TEE(1)`.
 
 
 ### Černá díra
 
 V Linuxu existuje speciální soubor `/dev/null`, kam můžeš přesměrovat 
 výstup programu, pokud tě vůbec nezajímá co vypisuje. A ani se nemusíš 
-obávat, že by se někdy zaplnil, je to nemožné.
+obávat, že by se někdy zaplnil, je to zkrátka prostě nemožné.
 
 
 ## Spouštění úloh na pozadí
 
 Spuštěný program po dobu svého běhu blokuje Terminál pro další použití. 
 To můžeš obejít tak, že danou úlohu spustíš na pozadí přidáním znaku 
-ampersand `&` na konec příkazu
+*ampersand* `&` na konec příkazu
 
 	$ program &
 
@@ -165,7 +164,7 @@ V tuto chvíle se z tebe stala vážně nebezpečná hackerka ;-)
 Další předností Linuxu je, že prostřednictvím jednoho počítače můžeš 
 ovládat druhý, klidně až na opačné straně Zeměkoule, aniž by ses musela 
 zvednout z pohodlí své pohovky. Program pro přihlášení ke vzdálenému 
-počítači se jmenuje `SSH` a používá se následovně
+počítači se jmenuje `SSH(1)` a používá se následovně
 
 	$ ssh -X uživatel@počítač
 
@@ -180,13 +179,13 @@ vzdáleném počítači, jejich výstup se zobrazuje na tvém vlastním.
 Na co by sis měla dát pozor je, že při ukončení spojení se vzdáleným 
 počítačem se automaticky ukončí i všechny tvoje úlohy běžící na pozadí. 
 Proto je třeba abys byla prozíravá a myslela na to, ještě dřív než je 
-spustíš. Jednou z možností je použití příkazu `NOHUP` spolu se 
+spustíš. Jednou z možností je použití příkazu `NOHUP(1)` spolu se 
 spuštěním programu na pozadí.
 
 	$ nohup ... &
 	
-Druhou možností je použití programu `SCREEN`, který ti vytvoří 
-virtuální obrazovku, od které se můžeš bez obav odpojit a posléze k ní 
+Druhou možností je použití programu `SCREEN(1)`, který ti vytvoří 
+virtuální obrazovku, od které se můžeš bez obav odpojit a posléze se k ní 
 znovu připojit.
 
 	$ screen
@@ -205,8 +204,8 @@ klávesovou zkratkou `Ctrl+D` nebo příkazem `exit`.
 ## Podmíněné spuštění
 
 Někdy se může stát, že budeš chtít spustit nějaký příkaz, jen pokud 
-předchozí příkaz zkončil úspěšně. Takovou typickou situací je kompilace 
-a instalace programů. Standardní postup výpadá následovně
+předchozí příkaz skončil úspěšně. Takovou typickou situací je kompilace 
+a instalace programů. Standardní postup vypadá následovně
 
 	$ ./configure
 	$ make
